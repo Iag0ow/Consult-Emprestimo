@@ -10,4 +10,8 @@ class Cliente extends Model
     use HasFactory;
     protected $primaryKey = 'cliente_id';
     protected $table = 'cliente';
+    public function empresa()
+    {
+        return $this->hasOne(Empresa::class, 'cliente_id');
+    }
 }

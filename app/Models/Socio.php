@@ -10,4 +10,8 @@ class Socio extends Model
     use HasFactory;
     protected $primaryKey = 'socio_id';
     protected $table = 'socio';
+    public function empresa()
+    {
+        return $this->belongsTo(Empresa::class, 'empresa_id');
+    }
 }
