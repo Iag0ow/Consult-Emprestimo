@@ -1,0 +1,105 @@
+footer {
+  background: #0061f2;
+  padding: 48px 0;
+  padding-bottom: 0;
+  position: relative;
+
+  .col-sm-12 {
+    display: flex;
+    flex-direction: column;
+
+    h6 {
+      font-weight: 600;
+      line-height: normal;
+      color: #e6f3f3;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li + li {
+        margin-top: 8px;
+      }
+      li {
+        a {
+          p {
+            line-height: normal;
+            color: #e6f3f3;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    p {
+      line-height: normal;
+      color: #e6f3f3;
+      font-size: 1rem;
+    }
+
+    div.copy {
+      p {
+        line-height: normal;
+        color: #e6f3f3;
+        font-size: 1rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      p {
+        color: #e6f3f3;
+        font-size: 1rem;
+      }
+      opacity: 1;
+      transition: 0.5s;
+    }
+
+    a:hover {
+      opacity: 0.9;
+      transition: 0.5s;
+    }
+  }
+
+  .col-sm-12:last-child {
+    align-items: flex-end;
+    ul {
+      li {
+        a {
+          p {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+#assinatura {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0px;
+  border-top: 1px solid #e6f3f333;
+  margin-top: 48px;
+
+  .copy {
+    p {
+      line-height: normal;
+      color: #e6f3f3;
+      font-size: 1rem;
+    }
+  }
+
+  a {
+    svg#LinceWeb {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      margin-bottom: 5px;
+    }
+  }
+}

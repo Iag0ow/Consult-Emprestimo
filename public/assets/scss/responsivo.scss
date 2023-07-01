@@ -1,0 +1,553 @@
+@media screen and (max-width: 1799px) {
+  #principal {
+    div.extras {
+      bottom: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 1699px) {
+  #principal {
+    div.extras {
+      bottom: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  #principal {
+    div.extras {
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #principal {
+    div.botoes {
+      a + a {
+        margin-left: 8px;
+      }
+
+      a {
+        padding: 4px;
+      }
+    }
+  }
+
+  #sobre-nos {
+    .row {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    div.fotos-sobre {
+      justify-content: center;
+      padding-right: 0;
+      margin-top: 24px;
+
+      img.direita {
+        width: 300px;
+        height: auto;
+      }
+
+      img.centro {
+        position: absolute;
+        width: 120px;
+        height: auto;
+        object-fit: contain;
+        left: 180px;
+        margin-top: 64px;
+      }
+
+      img.esquerda {
+        width: 140px;
+        height: auto;
+        margin-right: 48px;
+      }
+    }
+  }
+
+  #nao-perca-dinheiro-por-falta-de-gestao {
+    div.informacoes {
+      padding-right: 0;
+      padding-bottom: 64px;
+    }
+
+    div.cards-servicos {
+      margin-right: 24px;
+      div.card {
+        width: 85%;
+      }
+    }
+  }
+
+  #dashboard {
+    div.informacoes {
+      padding: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-top: 32px;
+    }
+  }
+
+  #slide-dashboard {
+    .owl-dots {
+      position: relative;
+      left: auto;
+      bottom: auto;
+      margin-top: 32px;
+    }
+  }
+
+  #resulth-erp {
+    div.grid-cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  #ideal-para-gestao {
+    div.empresas {
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      img.base {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+        justify-self: center;
+      }
+
+      // ul.lista-esquerda {
+      //   margin: 0;
+
+      //   li + li {
+      //     margin-top: 36px;
+      //   }
+
+      //   li:nth-child(1) {
+      //     position: relative;
+      //     left: 72px;
+      //     top: -4px;
+      //   }
+
+      //   li:nth-child(2) {
+      //     position: relative;
+      //     left: 16px;
+      //     top: -28px;
+      //   }
+
+      //   li:nth-child(3) {
+      //     position: relative;
+      //     flex-direction: row-reverse;
+      //     left: 36px;
+      //     top: -36px;
+
+      //     p {
+      //       margin-left: 4px;
+      //     }
+
+      //     img {
+      //       margin: 0;
+      //     }
+      //   }
+
+      //   li:nth-child(4) {
+      //     position: relative;
+      //     flex-direction: row-reverse;
+      //     left: 28px;
+      //     top: -28px;
+
+      //     p {
+      //       margin-left: 4px;
+      //     }
+
+      //     img {
+      //       margin: 0;
+      //     }
+      //   }
+
+      //   li:nth-child(5) {
+      //     position: relative;
+      //     left: -12px;
+      //     top: -32px;
+      //   }
+
+      //   li {
+      //     img {
+      //       width: 24px;
+      //       height: auto;
+      //       object-fit: contain;
+      //       margin-left: 4px;
+      //     }
+
+      //     p {
+      //       font-weight: 700;
+      //       font-size: 8px;
+      //       margin: 0;
+      //       text-align: right;
+      //     }
+      //   }
+      // }
+
+      // ul.lista-direita {
+      //   margin: 0;
+      //   li + li {
+      //     margin-top: 36px;
+      //   }
+
+      //   li:nth-child(1) {
+      //     position: relative;
+      //     right: 56px;
+      //     top: 0;
+      //     bottom: auto;
+      //   }
+
+      //   li:nth-child(2) {
+      //     position: relative;
+      //     right: 4px;
+      //     top: -24px;
+      //     bottom: auto;
+      //   }
+
+      //   li:nth-child(3) {
+      //     position: relative;
+      //     flex-direction: row-reverse;
+      //     right: 36px;
+      //     top: -28px;
+      //     bottom: auto;
+
+      //     p {
+      //       margin-right: 4px;
+      //     }
+
+      //     img {
+      //       margin: 0;
+      //     }
+      //   }
+
+      //   li:nth-child(4) {
+      //     position: relative;
+      //     flex-direction: row-reverse;
+      //     right: 28px;
+      //     top: -24px;
+      //     bottom: auto;
+
+      //     p {
+      //       margin-right: 4px;
+      //     }
+
+      //     img {
+      //       margin: 0;
+      //     }
+      //   }
+
+      //   li:nth-child(5) {
+      //     position: relative;
+      //     right: -24px;
+      //     top: -28px;
+      //     bottom: auto;
+      //   }
+
+      //   li {
+      //     img {
+      //       width: 24px;
+      //       height: auto;
+      //       object-fit: contain;
+      //       margin-right: 4px;
+      //     }
+
+      //     p {
+      //       font-weight: 700;
+      //       font-size: 8px;
+      //       margin: 0;
+      //       text-align: left;
+      //     }
+      //   }
+      // }
+    }
+  }
+
+  #depoimentos {
+    ul.grid-depoimentos {
+      grid-template-columns: repeat(2, 1fr);
+
+      li {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  footer {
+    .col-sm-12 + .col-sm-12 {
+      margin-top: 24px;
+    }
+
+    .col-sm-12:last-child {
+      align-items: flex-start;
+      ul {
+        li {
+          a {
+            p {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #modal-consultor {
+    .modal-content {
+      .modal-body {
+        button.botao-verde {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #sobre-nos {
+    div.fotos-sobre {
+      img.direita {
+        width: 60%;
+        height: auto;
+      }
+
+      img.centro {
+        position: absolute;
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+        left: 18%;
+        margin-top: 64px;
+      }
+
+      img.esquerda {
+        width: 30%;
+        height: auto;
+        margin-right: 36px;
+      }
+    }
+  }
+
+  #nao-perca-dinheiro-por-falta-de-gestao {
+    div.cards-servicos {
+      div.card {
+        width: 90%;
+      }
+    }
+  }
+
+  #ideal-para-gestao {
+    div.empresas {
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      img.base {
+        width: 80%;
+        max-width: 307px;
+        height: auto;
+        object-fit: contain;
+        justify-self: center;
+      }
+
+      ul.lista-esquerda {
+        margin: 0;
+
+        li + li {
+          margin-top: 36px;
+        }
+
+        li:nth-child(1) {
+          position: relative;
+          left: 72px;
+          top: -4px;
+        }
+
+        li:nth-child(2) {
+          position: relative;
+          left: 16px;
+          top: -28px;
+        }
+
+        li:nth-child(3) {
+          position: relative;
+          flex-direction: row-reverse;
+          left: 36px;
+          top: -36px;
+
+          p {
+            margin-left: 4px;
+          }
+
+          img {
+            margin: 0;
+          }
+        }
+
+        li:nth-child(4) {
+          position: relative;
+          flex-direction: row-reverse;
+          left: 28px;
+          top: -28px;
+
+          p {
+            margin-left: 4px;
+          }
+
+          img {
+            margin: 0;
+          }
+        }
+
+        li:nth-child(5) {
+          position: relative;
+          left: -12px;
+          top: -32px;
+        }
+
+        li {
+          img {
+            width: 24px;
+            height: auto;
+            object-fit: contain;
+            margin-left: 4px;
+          }
+
+          p {
+            font-weight: 700;
+            font-size: 8px;
+            margin: 0;
+            text-align: right;
+          }
+        }
+      }
+
+      ul.lista-direita {
+        margin: 0;
+        li + li {
+          margin-top: 36px;
+        }
+
+        li:nth-child(1) {
+          position: relative;
+          right: 56px;
+          top: 0;
+          bottom: auto;
+        }
+
+        li:nth-child(2) {
+          position: relative;
+          right: 4px;
+          top: -24px;
+          bottom: auto;
+        }
+
+        li:nth-child(3) {
+          position: relative;
+          flex-direction: row-reverse;
+          right: 36px;
+          top: -28px;
+          bottom: auto;
+
+          p {
+            margin-right: 4px;
+          }
+
+          img {
+            margin: 0;
+          }
+        }
+
+        li:nth-child(4) {
+          position: relative;
+          flex-direction: row-reverse;
+          right: 28px;
+          top: -24px;
+          bottom: auto;
+
+          p {
+            margin-right: 4px;
+          }
+
+          img {
+            margin: 0;
+          }
+        }
+
+        li:nth-child(5) {
+          position: relative;
+          right: -24px;
+          top: -28px;
+          bottom: auto;
+        }
+
+        li {
+          img {
+            width: 24px;
+            height: auto;
+            object-fit: contain;
+            margin-right: 4px;
+          }
+
+          p {
+            font-weight: 700;
+            font-size: 8px;
+            margin: 0;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  #depoimentos {
+    ul.grid-depoimentos {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  #assinatura {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .copy {
+      margin-bottom: 8px;
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  #modal-consultor {
+    .modal-content {
+      .modal-body {
+        form {
+          div.possui-software-gestao {
+            display: flex;
+            flex-direction: column;
+            div.form-check-inline + div.form-check-inline {
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 85%;
+  }
+}
