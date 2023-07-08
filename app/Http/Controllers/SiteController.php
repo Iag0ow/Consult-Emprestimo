@@ -12,4 +12,8 @@ class SiteController extends Controller
             'titulo' => 'Home',
         ]);
     }
+    public function login()
+    {
+        return view('pages.login');
+    }
 }
