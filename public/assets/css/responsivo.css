@@ -12,7 +12,16 @@
 
 }
 @media screen and (max-width: 991px) {
-  /* here */
+  #certificado::after{
+    content: '';
+    position: absolute;
+    top: calc(100% - -3px);
+    left: calc(50% - 6rem);
+    height: 0.4rem;
+    width: 22%;
+    background-color: #23A6F0;
+    border-radius: 5px;
+  }
 }
 @media screen and (max-width: 767px) {
   /* here */
