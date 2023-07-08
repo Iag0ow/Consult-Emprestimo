@@ -13,3 +13,12 @@
 #submit:hover{
     background: #4180ff;
 }
+
+@media ( max-width: 700px ) {
+    .smallScreen{
+        height: 100vh;
+    }
+    .mobileBorder{
+        border-radius: 10px;
+    }  
+}
