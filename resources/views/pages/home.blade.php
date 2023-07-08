@@ -183,7 +183,7 @@
     content: '';
     position: absolute;
     top: calc(100% - -3px);
-    left: calc(50% - 17.5rem);
+    left: calc(29.5%);
     height: 0.4rem;
     width: 22%;
     background-color: #23A6F0;
