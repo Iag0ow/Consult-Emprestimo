@@ -50,7 +50,7 @@
 
   {{-- Desktop --}}
   <div class="hidden md:block">
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-3">
       <div class="w-full border border-[#B7B7B7] rounded-md p-5 max-w-[18rem] mx-auto">
         <h3 class="text-center text-base font-bold">Confiabilidade e Autenticidade</h3>
         <p class="text-center text-sm mt-3">Aumente a confiança dos seus clientes ao exibir o cadeado verde e o "https://" na barra de endereço, indicando um site autêntico e seguro.</p>
