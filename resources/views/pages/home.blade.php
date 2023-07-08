@@ -163,11 +163,11 @@
 <footer id="footer" class="flex md:h-[238px] bg-[#23A6F0] px-[40px] md:px-64 mt-16 mb-16">
 
     <ul class="hidden md:flex text-white text-lg items-center justify-end space-x-16 ml-auto ">
-      <li class="transition duration-300 ease-out"><a href="#">Atendimento ao cliente</a></li>
-      <li class="transition duration-300 ease-out"><a href="#">Câmbio</a></li>
-      <li class="transition duration-300 ease-out"><a href="#">Seguro</a></li>
-      <li class="transition duration-300 ease-out"><a href="#">Cartão de Crédito</a></li>
-      <li class="transition duration-300 ease-out"><a href="#">Sobre</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/atendimento/atendimento-ao-cliente.htm" target="_blank">Atendimento ao cliente</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cambio.htm" target="_blank">Câmbio</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/seguros.htm" target="_blank">Seguro</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cartoes.htm" target="_blank">Cartão de Crédito</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/sobre/relacoes-com-investidores/informacoes-financeiras.htm" target="_blank">Sobre</a></li>
     </ul>
 
 </footer>
