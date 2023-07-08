@@ -10,9 +10,9 @@
 
     <ul class="hidden md:flex text-[#DCDCDC] text-xl	 items-center justify-end space-x-16 ml-auto ">
       <li class="hover:text-white transition duration-300 ease-out"><a href="#">Início</a></li>
-      <li class="hover:text-white transition duration-300 ease-out"><a href="#">Certificado</a></li>
-      <li class="hover:text-white transition duration-300 ease-out"><a href="#">Contrate</a></li>
-      <li class="hover:text-white transition duration-300 ease-out"><a href="#">Contato</a></li>
+      <li class="hover:text-white transition duration-300 ease-out"><a href="#certificado">Certificado</a></li>
+      <li class="hover:text-white transition duration-300 ease-out"><a href="#section-simular">Contrate</a></li>
+      <li class="hover:text-white transition duration-300 ease-out"><a href="#footer">Contato</a></li>
     </ul>
   </nav>
 
@@ -160,7 +160,7 @@
   </div>
 </section>
 
-<section class="flex md:h-[238px] bg-[#23A6F0] px-[40px] md:px-64 mt-16 mb-16">
+<footer id="footer" class="flex md:h-[238px] bg-[#23A6F0] px-[40px] md:px-64 mt-16 mb-16">
 
     <ul class="hidden md:flex text-white text-lg items-center justify-end space-x-16 ml-auto ">
       <li class="transition duration-300 ease-out"><a href="#">Atendimento ao cliente</a></li>
@@ -170,7 +170,7 @@
       <li class="transition duration-300 ease-out"><a href="#">Sobre</a></li>
     </ul>
 
-</section>
+</footer>
 
 
 <style>
