@@ -1,0 +1,15 @@
+.login{
+    background-color: #23a6f0;
+}
+.container button[type="submit"] {
+    background-color: #1c64f2;
+}
+#bg-image{
+    background-image: url('../images/hero1.png');
+}
+#submit{
+    background: #1c64f2;
+}
+#submit:hover{
+    background: #4180ff;
+}
