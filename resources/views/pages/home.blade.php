@@ -42,7 +42,7 @@
 
 <div class="justify-center items-center mb-16">
   <h2 id="certificado" class="text-center text-4xl md:text-6xl font-semibold text-black">Certificado Digital</h2>
-  <p class="text-center text-xs md:text-lg">Adquira um certificado digital confiável para garantir a segurança e agilidade na <br>obtenção de empréstimos.</p>
+  <p class="text-center text-xs md:text-lg pt-4">Adquira um certificado digital confiável para garantir a segurança e agilidade na <br>obtenção de empréstimos.</p>
 </div>
 
   {{-- Desktop --}}
@@ -92,7 +92,7 @@
   <div></div>
 
     <div class="my-auto">
-      <div class="bg-white px-14 py-10 rounded-xl drop-shadow-md min-w-[38rem] max-w-[42rem]">
+      <div id class="bg-white px-14 py-10 pb-16 rounded-xl drop-shadow-md min-w-[38rem] max-w-[42rem]">
         <h2 class="text-center text-2xl font-bold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
         <p class="text-center text-2xl font-bold text-[#23A6F0] mb-10">Simule já</p>
 
@@ -115,9 +115,9 @@
             <img src="./assets/images/whatsapp.svg" alt="">
           </div>
 
-          <input type="button" class="text-xl text-white font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="SIMULE">
         </form>
       </div>
+      <input id="submit-simule" type="button" class="text-xl text-white font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="SIMULE">
   </div>
 </section>
 
@@ -165,23 +165,29 @@
     <ul class="hidden md:flex text-white text-lg items-center justify-end space-x-16 ml-auto ">
       <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/atendimento/atendimento-ao-cliente.htm" target="_blank">Atendimento ao cliente</a></li>
       <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cambio.htm" target="_blank">Câmbio</a></li>
-      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/seguros.htm" target="_blank">Seguro</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/seguros.htm" target="_blank">Seguro.</a></li>
       <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cartoes.htm" target="_blank">Cartão de Crédito</a></li>
       <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/sobre/relacoes-com-investidores/informacoes-financeiras.htm" target="_blank">Sobre</a></li>
     </ul>
 
 </footer>
 
-
 <style>
+  nav{
+    border-bottom: white 1px solid;
+  }
+  #certificado{
+    position: relative;
+  }
   #certificado::after{
     content: '';
-    display: block;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: #23A6F0;
-    margin: 0 auto;
     position: absolute;
+    top: calc(100% - -3px);
+    left: calc(50% - 280px);
+    height: 0.4rem;
+    width: 22%;
+    background-color: #23A6F0;
+    border-radius: 5px;
   }
 
   #melhor::after{
@@ -222,16 +228,6 @@
     }
   });
 </script>
-
-
-
-
-
-
-
-
-
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
