@@ -160,7 +160,7 @@
   </div>
 </section>
 
-<footer id="footer" class="flex md:h-[238px] bg-[#23A6F0] px-[40px] md:px-64 mt-16 mb-16">
+<footer id="footer" class="flex md:h-[238px] bg-[#23A6F0] px-[40px] md:px-64 mt-16">
 
     <ul class="hidden md:flex text-white text-lg items-center justify-end space-x-16 ml-auto ">
       <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/atendimento/atendimento-ao-cliente.htm" target="_blank">Atendimento ao cliente</a></li>
