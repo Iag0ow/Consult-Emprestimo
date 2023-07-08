@@ -24,13 +24,7 @@
         </div>
       </div>
   </div>
-  <div class="flex justify-center align-center mb-5">
-    <img class="animate-bounce w-7" src="./assets/images/Vector.svg" alt="">
-  </div>
 
- 
-
-  
 </section>
 
 <section class="relative px-[40px] mt-16 mb-16">
@@ -47,8 +41,6 @@
       <p class="text-center text-sm mt-3">Simplifique o processo de empréstimo com um certificado digital, agilizando solicitações e análises de crédito de forma segura e conveniente.</p>
   </div>
   </div>
-    
-    
-    
+
 </section>
 @endsection
