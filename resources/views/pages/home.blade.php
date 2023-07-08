@@ -23,8 +23,8 @@
       <div class="block items-center justify-center w-full max-w-md md:max-w-2xl">
         <h1 class="text-4xl text-white font-extrabold md:text-7xl">Crédito Digital <br> Safra</h1>
         <p class="text-white text-base font-base py-4 w-[80%] md:text-lg">Empréstimo fácil e rápido para sua empresa.</p>
-        <button class="text-white p-3 px-5 font-bold w-full bg-[#23A6F0] text-xs rounded-full md:text-sm md:max-w-[200px] hover:bg-[#00003C] transition duration-300 ease-out">Simule e Contrate</button>
-        <button class="text-white p-3 mb-10 mt-2 px-5 font-bold w-full border border-[#ffff] md:text-sm text-xs md:max-w-[200px] rounded-full hover:shadow-xl hover:shadow-[#FFFFFF] transition duration-700 ease-out">Saiba Mais</button>
+        <a href="#section-simular" class="text-white p-3 px-5 font-bold w-full bg-[#23A6F0] text-xs rounded-full md:text-sm md:max-w-[200px] hover:bg-[#00003C] transition duration-300 ease-out">Simule e Contrate</a>
+        <a class="text-white p-3 mb-10 mt-2 px-5 font-bold w-full border border-[#ffff] md:text-sm text-xs md:max-w-[200px] rounded-full hover:shadow-xl hover:shadow-[#FFFFFF] transition duration-700 ease-out">Saiba Mais</a>
         <div class="flex justify-center align-center mb-5 md:hidden">
           <img class="animate-pulse w-7" src="./assets/images/Vector.svg" alt="">
         </div>
@@ -85,7 +85,7 @@
 </section >
 
 {{-- Desktop --}}
-<section class="w-screen h-screen bg-cover bg-center hidden md:flex bg-[#DFEEF6] px-[40px] md:px-64 mt-16 mb-16" style="background-image: url('./assets/images/fundosection3.png');">
+<section id="section-simular" class="w-screen h-screen bg-cover bg-center hidden md:flex bg-[#DFEEF6] px-[40px] md:px-64 mt-16 mb-16" style="background-image: url('./assets/images/fundosection3.png');">
 
  <div class="grid grid-cols-2">
 
@@ -201,7 +201,28 @@
   -webkit-appearance: none;
   margin: 0;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var smoothScrollLinks = document.getElementsByClassName('scroll-smooth');
+    for (var i = 0; i < smoothScrollLinks.length; i++) {
+      smoothScrollLinks[i].addEventListener('click', function(event) {
+        event.preventDefault();
+        var target = this.getAttribute('href');
+        document.querySelector(target).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    }
+  });
+</script>
+
 
 
 
