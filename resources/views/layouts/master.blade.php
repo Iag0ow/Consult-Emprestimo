@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     @extends('layouts.head')
-<body class="w-screen overflow-x-hidden">
-    <div class="w-screen overflow-x-hidden">
+<body class="overflow-x-hidden">
+    <div class="w-screen">
         @yield('conteudo')
     </div>
 </body>
