@@ -13,3 +13,17 @@ div.my-auto{
   top: calc(100% - 30px);
   left: calc(25%);
 }
+
+.button-certificado{
+  content: "";
+  position: absolute;
+  top: calc(100% - 20px);
+  left: calc(50% - 71px);
+}
+.button-certificado:hover svg path {
+  stroke: #ffffff;
+}
+
+.button-certificado-middle:hover .svg-hover path {
+  stroke: #23a6f0;
+}
