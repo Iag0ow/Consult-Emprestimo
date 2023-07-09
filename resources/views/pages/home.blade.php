@@ -145,7 +145,8 @@
     </div>
  </section>
 
-{{-- Desktop/Mobile --}}
+
+ {{-- Desktop/Mobile --}}
 <section class="flex px-[40px] h-screen md:px-64" style="background-image: url('./assets/images/background4.png');">
   <div class="md:grid md:grid-cols-2">
 
@@ -154,12 +155,12 @@
     </div>
 
     <div class="my-auto">
-      <div>
+      <div id="sua-melhor">
         <h2 id="melhor" class="text-3xl text-center text-3xl font-bold text-black  md:text-5xl md:text-left">Sua melhor opção para <br><span class="text-[#23A6F0]"> Empréstimos</span></h2>
         <p class="font-semibold text-sm text-center md:text-left md:text-lg mt-7">O Banco Safra é uma instituição financeira renomada e confiável, com uma sólida reputação no mercado. Oferecem uma variedade de soluções de empréstimo para atender às necessidades individuais e empresariais, combinando taxas competitivas, flexibilidade e excelência no atendimento ao cliente.</p>
       </div>
 
-      <ul class="text-lg md:text-2xl py-8 font-bold space-y-10">
+      <ul id="lista" class="text-lg md:text-2xl py-8 font-bold space-y-10">
         <li class="flex items-center space-x-2">
           <img src="./assets/images/check.svg" class="w-8" alt="Ícone">
           <span>Taxas Competitivas</span>

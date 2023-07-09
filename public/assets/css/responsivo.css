@@ -41,6 +41,29 @@
     border-radius: 5px;
     border-bottom: white 1px solid;
   }
+
+  #sua-melhor h2{
+    font-size: 35px;
+  }
+
+  #sua-melhor p{
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  #lista > li > span {
+    font-size: 16px;
+  }
+
+  #lista > li > img {
+    width: 24px;
+  }
+
+  #lista li {
+    margin: 15px; 
+    margin-left: 0;
+  }
+  
 }
 
 @media screen and (max-width: 1200px) {
