@@ -81,7 +81,7 @@
 </section >
 
 {{-- Desktop --}}
-<section id="section-simular" class="w-screen h-screen bg-cover bg-center hidden md:flex bg-[#DFEEF6] px-[40px] flex justify-end md:px-64 mb-16" style="background-image: url('./assets/images/background3.png');">
+<section id="section-simular" class="w-screen h-screen bg-cover bg-center hidden md:flex bg-[#DFEEF6] px-[40px] flex justify-end md:px-64" style="background-image: url('./assets/images/background3.png');">
     <div class="my-auto flex flex-end">
       <div id class="bg-white px-14 py-10 pb-16 rounded-xl drop-shadow-md min-w-[38rem] max-w-[42rem]">
         <h2 class="text-center text-2xl font-bold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
@@ -113,7 +113,7 @@
 </section>
 
 {{-- Mobile --}}
-<section id="section-simular" class="flex w-screen h-screen bg-cover bg-center md:hidden bg-[#DFEEF6] px-[40px] md:px-64 mb-16" style="background-image: url('./assets/images/background3.png');">
+<section id="section-simular" class="flex w-screen h-screen bg-cover bg-center md:hidden bg-[#DFEEF6] px-[40px] md:px-64" style="background-image: url('./assets/images/background3.png');">
     <div class="my-auto">
         <div id class="bg-white px-8 py-5 pb-16 rounded-xl drop-shadow-md">
           <h2 class="text-center text-sm font-extrabold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
@@ -147,13 +147,14 @@
 
 
  {{-- Desktop/Mobile --}}
-<section class="flex px-[40px] h-screen md:px-64" style="background-image: url('./assets/images/background4.png');">
+
+ <section class="flex px-[40px] h-screen md:px-64" style="background-image: url('./assets/images/background4.png');">
   <div class="md:grid md:grid-cols-2">
 
-    <div class="md:hidden flex">
+    <div class="md:hidden flex my-auto">
       <img class="w-[247px] mx-auto" src="./assets/images/imagemdinheiro.png" alt="">
     </div>
-
+    
     <div class="my-auto">
       <div id="sua-melhor">
         <h2 id="melhor" class="text-3xl text-center text-3xl font-bold text-black  md:text-5xl md:text-left">Sua melhor opção para <br><span class="text-[#23A6F0]"> Empréstimos</span></h2>
@@ -218,9 +219,9 @@
 {{-- Desktop --}}
 <footer id="footer" class="hidden py-8 md:block h-auto bg-[#23A6F0] md:px-64">
   <div class="flex justify-between mb-4">
-    <img class="my-auto w-48" src="./assets/images/logo-safra2.png" alt="">
+    <img id="logo-footer" class="my-auto w-48" src="./assets/images/logo-safra2.png" alt="">
   
-    <ul class=" text-white text-sm items-center flex justify-end space-x-8">
+    <ul id="lista-footer" class="text-white text-sm items-center flex justify-end space-x-8">
       <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/sobre/relacoes-com-investidores/informacoes-financeiras.htm" target="_blank">Sobre</a></li>
       <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/seguros.htm" target="_blank">Seguro</a></li>
       <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cambio.htm" target="_blank">Câmbio</a></li>
@@ -232,7 +233,7 @@
 
   <div class="w-full h-[1px] bg-white opacity-30"></div>
 
-  <div class="flex mt-[10px] justify-between">
+  <div id="direitos" class="flex mt-[10px] justify-between">
     <p class="text-white text-[12px]">© 2023 All rights reserved.</p>
     <p class="text-white text-[12px]">Banco Safra S/A - CNPJ: 58.160.789/0001-28</p>
   </div>

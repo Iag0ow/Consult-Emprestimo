@@ -29,7 +29,7 @@
     border-bottom: white 1px solid;
   }
 }
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1600px) {
   .line::after{
     opacity: 0.5;
     content: '';
@@ -62,6 +62,18 @@
   #lista li {
     margin: 15px; 
     margin-left: 0;
+  }
+
+  #logo-footer {
+    width: 130px;
+  }
+
+  #lista-footer > li {
+    font-size: 10px;
+  }
+
+  #direitos p{
+    font-size: 8px;
   }
   
 }
