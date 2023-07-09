@@ -29,7 +29,10 @@
     border-bottom: white 1px solid;
   }
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1399px) {
+  .button-certificado svg {
+    stroke: #ffffff;
+  }
   .line::after{
     opacity: 0.5;
     content: '';
