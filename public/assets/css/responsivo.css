@@ -6,9 +6,9 @@
     content: '';
     position: absolute;
     top: 113px;
-    left: -110%;
+    left: -101%;
     height: 0.4rem;
-    width: 211%;
+    width: 205%;
     border-radius: 5px;
     border-bottom: white 1px solid;
   }
@@ -30,13 +30,17 @@
   /* here */
 }
 @media screen and (max-width: 991px) {
+  .line::after{
+    content: '';
+    display: none;
+  }
   nav{
     border-bottom: white 1px solid;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   /* here */
 }
 @media screen and (min-width: 993px) {
-  /* here */
+
 }
