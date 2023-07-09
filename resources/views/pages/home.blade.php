@@ -16,7 +16,6 @@
     </ul>
   </nav>
 
-
   <div class="bg-cover bg-center h-screen w-screen" style="background-image: url('./assets/images/hero1.png'); z-index: 1;"></div>
 
   <div class="absolute px-[40px] inset-x-0 bottom-0 flex md:px-64 md:top-0 md:items-center md:justify-start">
@@ -30,15 +29,9 @@
         </div>
       </div>
   </div>
-
-  <div id="esse aqui" class="hidden md:flex bottom-0 justify-center items-center mb-5">
-    <img class="animate-pulse w-7" src="./assets/images/Vector.svg" alt="">
-  </div>
-
-
 </section>
 
-<section class="px-[40px] md:px-64 py-44">
+<section class="bg-cover bg-center h-screen w-screen px-[40px] md:px-64 {{-- py-44 --}}" style="background-image: url('./assets/images/background2.png');;">
 
 <div class="justify-center items-center mb-16">
   <h2 id="certificado" class="text-center text-4xl md:text-6xl font-semibold text-black">Certificado Digital</h2>
@@ -58,7 +51,7 @@
       </div>
       <div class="max-w-[414px] max-h-[273px] border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl">
         <h3 class="text-center text-2xl font-bold">Segurança Online</h3>
-        <p class="text-center text-base	 mt-3">Mantenha seu website protegido com um certificado digital que criptografa dados confidenciais, garantindo a segurança das informações.</p>
+        <p class="text-center text-base	mt-3">Mantenha seu website protegido com um certificado digital que criptografa dados confidenciais, garantindo a segurança das informações.</p>
       </div>
     </div>
   </div>
@@ -85,7 +78,7 @@
 </section >
 
 {{-- Desktop --}}
-<section id="section-simular" class="w-screen h-screen bg-cover bg-center hidden md:flex bg-[#DFEEF6] px-[40px] md:px-64 mt-16 mb-16" style="background-image: url('./assets/images/fundosection3.png');">
+<section id="section-simular" class="w-screen h-screen bg-cover bg-center hidden md:flex bg-[#DFEEF6] px-[40px] md:px-64 mb-16" style="background-image: url('./assets/images/fundosection3.png');">
 
  <div class="grid grid-cols-2">
 
