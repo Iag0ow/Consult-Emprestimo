@@ -187,23 +187,23 @@
 </footer>
 
 {{-- Desktop --}}
-<footer id="footer" class="hidden py-4 md:block h-auto bg-[#23A6F0] md:px-64">
-  <div class="flex">
-    <img class="my-auto w-32" src="./assets/images/logo-safra.png" alt="">
+<footer id="footer" class="hidden py-8 md:block h-auto bg-[#23A6F0] md:px-64">
+  <div class="flex justify-between mb-4">
+    <img class="my-auto w-48" src="./assets/images/logo-safra2.png" alt="">
   
-  <ul class=" text-white text-sm mx-auto items-center flex md:justify-end space-x-8">
-    <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/sobre/relacoes-com-investidores/informacoes-financeiras.htm" target="_blank">Sobre</a></li>
-    <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/seguros.htm" target="_blank">Seguro</a></li>
-    <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cambio.htm" target="_blank">Câmbio</a></li>
-    <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/investimentos.htm" target="_blank">Investimentos</a></li>
-    <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cartoes.htm" target="_blank">Cartão de Crédito</a></li>
-    <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/atendimento/atendimento-ao-cliente.htm" target="_blank">Atendimento ao cliente</a></li>
-  </ul>
-</div>
+    <ul class=" text-white text-sm items-center flex justify-end space-x-8">
+      <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/sobre/relacoes-com-investidores/informacoes-financeiras.htm" target="_blank">Sobre</a></li>
+      <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/seguros.htm" target="_blank">Seguro</a></li>
+      <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cambio.htm" target="_blank">Câmbio</a></li>
+      <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/investimentos.htm" target="_blank">Investimentos</a></li>
+      <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cartoes.htm" target="_blank">Cartão de Crédito</a></li>
+      <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/atendimento/atendimento-ao-cliente.htm" target="_blank">Atendimento ao cliente</a></li>
+    </ul>
+  </div>
 
   <div class="w-full h-[1px] bg-white opacity-30"></div>
 
-  <div class="flex mt-[8px] justify-between">
+  <div class="flex mt-[10px] justify-between">
     <p class="text-white text-[12px]">© 2023 All rights reserved.</p>
     <p class="text-white text-[12px]">Banco Safra S/A - CNPJ: 58.160.789/0001-28</p>
   </div>
