@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('conteudo')
-<section class="relative w-screen">
+<section class="relative w-screen line">
   <div class="relative">
     <nav class="absolute px-5 md:px-64 flex top-0 left-0 right-0 z-10">
       <img src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra">
@@ -9,7 +9,7 @@
         <img class="w-4" src="./assets/images/icon-menu.svg" alt="">
       </button>
   
-      <ul class="line hidden md:flex text-[#DCDCDC] text-xl items-center justify-end space-x-16 ml-auto ">
+      <ul class="hidden md:flex text-[#DCDCDC] text-xl items-center justify-end space-x-16 ml-auto ">
         <li class="hover:text-white transition duration-300 ease-out"><a href="#">Início</a></li>
         <li class="hover:text-white transition duration-300 ease-out"><a href="#certificado">Certificado</a></li>
         <li class="hover:text-white transition duration-300 ease-out"><a href="#section-simular">Contrate</a></li>
@@ -249,12 +249,13 @@
     position: relative;
   }
   .line::after{
+    opacity: 0.5;
     content: '';
     position: absolute;
-    top: 113px;
-    left: -158%;
+    top: 100px;
+    left: calc(19%);
     height: 0.4rem;
-    width: 259%;
+    width: calc(50% - -171px);
     border-radius: 5px;
     border-bottom: white 1px solid;
   }
