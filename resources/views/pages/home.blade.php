@@ -8,7 +8,7 @@
       <img class="w-4" src="./assets/images/icon-menu.svg" alt="">
     </button>
 
-    <ul class="hidden md:flex text-[#DCDCDC] text-xl	 items-center justify-end space-x-16 ml-auto ">
+    <ul class="line hidden md:flex text-[#DCDCDC] text-xl items-center justify-end space-x-16 ml-auto ">
       <li class="hover:text-white transition duration-300 ease-out"><a href="#">Início</a></li>
       <li class="hover:text-white transition duration-300 ease-out"><a href="#certificado">Certificado</a></li>
       <li class="hover:text-white transition duration-300 ease-out"><a href="#section-simular">Contrate</a></li>
@@ -166,7 +166,18 @@
 </footer>
 
 <style>
-  nav{
+
+  .line{
+    position: relative;
+  }
+  .line::after{
+    content: '';
+    position: absolute;
+    top: 113px;
+    left: -158%;
+    height: 0.4rem;
+    width: 259%;
+    border-radius: 5px;
     border-bottom: white 1px solid;
   }
   #certificado{
