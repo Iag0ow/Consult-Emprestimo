@@ -12,7 +12,9 @@
   /* here */
 }
 @media screen and (max-width: 991px) {
-  /* here */
+  nav{
+    border-bottom: white 1px solid;
+  }
 }
 @media screen and (max-width: 767px) {
   /* here */
