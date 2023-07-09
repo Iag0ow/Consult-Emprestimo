@@ -78,7 +78,7 @@
 </section >
 
 {{-- Desktop --}}
-<section id="section-simular" class="w-screen h-screen bg-cover bg-center hidden md:flex bg-[#DFEEF6] px-[40px] md:px-64 mb-16" style="background-image: url('./assets/images/fundosection3.png');">
+<section id="section-simular" class="w-screen h-screen bg-cover bg-center hidden md:flex bg-[#DFEEF6] px-[40px] md:px-64 mb-16" style="background-image: url('./assets/images/background3.png');">
 
  <div class="grid grid-cols-2">
 
@@ -115,14 +115,14 @@
 </section>
 
 {{-- Desktop/Mobile --}}
-<section class="flex px-[40px] md:px-64 mt-16 mb-16">
+<section class="flex px-[40px] h-screen md:px-64" style="background-image: url('./assets/images/background4.png');">
   <div class="md:grid md:grid-cols-2">
 
     <div class="md:hidden flex">
       <img class="w-[247px] mx-auto" src="./assets/images/imagemdinheiro.png" alt="">
     </div>
 
-    <div>
+    <div class="my-auto">
       <div>
         <h2 id="melhor" class="text-3xl text-center text-3xl font-bold text-black  md:text-5xl md:text-left">Sua melhor opção para <br><span class="text-[#23A6F0]"> Empréstimos</span></h2>
         <p class="font-semibold text-sm text-center md:text-left md:text-lg mt-7">O Banco Safra é uma instituição financeira renomada e confiável, com uma sólida reputação no mercado. Oferecem uma variedade de soluções de empréstimo para atender às necessidades individuais e empresariais, combinando taxas competitivas, flexibilidade e excelência no atendimento ao cliente.</p>
@@ -153,7 +153,7 @@
   </div>
 </section>
 
-<footer id="footer" class="flex md:h-[238px] bg-[#23A6F0] px-[40px] md:px-64 mt-16">
+<footer id="footer" class="flex md:h-[238px] bg-[#23A6F0] px-[40px] md:px-64">
 
     <ul class="hidden md:flex text-white text-lg items-center justify-end space-x-16 ml-auto ">
       <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/atendimento/atendimento-ao-cliente.htm" target="_blank">Atendimento ao cliente</a></li>
