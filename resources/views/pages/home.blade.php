@@ -23,7 +23,7 @@
         <h1 class="text-4xl text-white font-extrabold md:text-7xl">Crédito Digital <br> Safra</h1>
         <p class="text-white text-base font-base py-4 w-[80%] md:text-lg">Empréstimo fácil e rápido para sua empresa.</p>
         <a href="#section-simular" class="text-white p-3 px-5 font-bold w-full bg-[#23A6F0] text-xs rounded-full md:text-sm md:max-w-[200px] hover:bg-[#00003C] transition duration-300 ease-out">Simule e Contrate</a>
-        <a class="text-white p-3 mb-10 mt-2 px-5 font-bold w-full border border-[#ffff] md:text-sm text-xs md:max-w-[200px] rounded-full hover:shadow-xl hover:shadow-[#FFFFFF] transition duration-700 ease-out">Saiba Mais</a>
+        <a href="#section-certificado" class="text-white p-3 mb-10 mt-2 px-5 font-bold w-full border border-[#ffff] md:text-sm text-xs md:max-w-[200px] rounded-full hover:shadow-xl hover:shadow-[#FFFFFF] transition duration-700 ease-out">Saiba Mais</a>
         {{-- <div class="flex justify-center align-center mb-5 md:hidden">
           <img class="animate-pulse w-7" src="./assets/images/arrow-down.svg" alt="">
         </div> --}}
@@ -31,7 +31,7 @@
   </div>
 </section>
 
-<section class="bg-cover bg-center h-screen w-screen px-[40px] md:px-64 {{-- py-44 --}}" style="background-image: url('./assets/images/background2.png');;">
+<section id="section-certificado" class="bg-cover bg-center h-screen w-screen px-[40px] md:px-64 {{-- py-44 --}}" style="background-image: url('./assets/images/background2.png');;">
 
 <div class="justify-center items-center mb-16">
   <h2 id="certificado" class="text-center text-4xl md:text-6xl font-semibold text-black">Certificado Digital</h2>
@@ -153,11 +153,12 @@
   </div>
 </section>
 
+{{-- Mobile --}}
 <footer id="footer" class="py-4 md:hidden md:h-[238px] bg-[#23A6F0] px-[40px] md:px-64">
 
   <div class="grid grid-cols-3">
     <div class="flex">
-      <img class="my-auto" src="./assets/images/logo-safra.png" alt="">
+      <img class="my-auto" src="./assets/images/logo-safra3.png" alt="">
     </div>
 
     <ul class="text-white text-[8px] mx-auto items-center space-y-[6px] md:text-lg md:flex md:justify-end md:space-x-16 md:ml-auto">
@@ -175,11 +176,35 @@
 
   <div class="w-full h-[1px] bg-white mt-4 opacity-30"></div>
 
-  <div class="flex mt-[8px]">
+  <div class="flex mt-[8px] justify-between">
     <p class="text-white text-[6px]">© 2023 All rights reserved.</p>
-    <p class="text-white text-end text-[6px]">Banco Safra S/A - CNPJ: 58.160.789/0001-28</p>
+    <p class="text-white text-[6px]">Banco Safra S/A - CNPJ: 58.160.789/0001-28</p>
   </div>
 
+</footer>
+
+{{-- Desktop --}}
+<footer id="footer" class="hidden py-4 md:block h-auto bg-[#23A6F0] md:px-64">
+  <div class="flex">
+    <img class="my-auto w-32" src="./assets/images/logo-safra.png" alt="">
+  
+  <ul class=" text-white text-sm mx-auto items-center flex md:justify-end space-x-8">
+    <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/sobre/relacoes-com-investidores/informacoes-financeiras.htm" target="_blank">Sobre</a></li>
+    <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/seguros.htm" target="_blank">Seguro</a></li>
+    <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cambio.htm" target="_blank">Câmbio</a></li>
+    <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/investimentos.htm" target="_blank">Investimentos</a></li>
+    <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cartoes.htm" target="_blank">Cartão de Crédito</a></li>
+    <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/atendimento/atendimento-ao-cliente.htm" target="_blank">Atendimento ao cliente</a></li>
+  </ul>
+</div>
+
+  <div class="w-full h-[1px] bg-white opacity-30"></div>
+
+  <div class="flex mt-[8px] justify-between">
+    <p class="text-white text-[12px]">© 2023 All rights reserved.</p>
+    <p class="text-white text-[12px]">Banco Safra S/A - CNPJ: 58.160.789/0001-28</p>
+  </div>
+  
 </footer>
 
 <style>
