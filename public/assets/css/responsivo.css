@@ -33,6 +33,8 @@
   .button-certificado svg {
     stroke: #ffffff;
   }
+}
+@media screen and (max-width: 1699px) {
   .line::after{
     opacity: 0.5;
     content: '';
