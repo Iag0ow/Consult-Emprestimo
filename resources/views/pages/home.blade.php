@@ -1,20 +1,23 @@
 @extends('layouts.master')
 @section('conteudo')
 <section class="relative w-screen">
-  <nav class="absolute px-5 md:px-64 flex top-0 left-0 right-0 z-10">
-    <img src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra">
+  <div class="relative">
+    <nav class="absolute px-5 md:px-64 flex top-0 left-0 right-0 z-10">
+      <img src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra">
+  
+      <button class="ml-auto md:hidden">
+        <img class="w-4" src="./assets/images/icon-menu.svg" alt="">
+      </button>
+  
+      <ul class="line hidden md:flex text-[#DCDCDC] text-xl items-center justify-end space-x-16 ml-auto ">
+        <li class="hover:text-white transition duration-300 ease-out"><a href="#">Início</a></li>
+        <li class="hover:text-white transition duration-300 ease-out"><a href="#certificado">Certificado</a></li>
+        <li class="hover:text-white transition duration-300 ease-out"><a href="#section-simular">Contrate</a></li>
+        <li class="hover:text-white transition duration-300 ease-out"><a href="#footer">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
 
-    <button class="ml-auto md:hidden">
-      <img class="w-4" src="./assets/images/icon-menu.svg" alt="">
-    </button>
-
-    <ul class="line hidden md:flex text-[#DCDCDC] text-xl items-center justify-end space-x-16 ml-auto ">
-      <li class="hover:text-white transition duration-300 ease-out"><a href="#">Início</a></li>
-      <li class="hover:text-white transition duration-300 ease-out"><a href="#certificado">Certificado</a></li>
-      <li class="hover:text-white transition duration-300 ease-out"><a href="#section-simular">Contrate</a></li>
-      <li class="hover:text-white transition duration-300 ease-out"><a href="#footer">Contato</a></li>
-    </ul>
-  </nav>
 
   <div class="bg-cover bg-center h-screen w-screen" style="background-image: url('./assets/images/hero1.png'); z-index: 1;"></div>
 

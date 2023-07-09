@@ -2,10 +2,28 @@
   /* here */
 }
 @media screen and (max-width: 1699px) {
-  /* here */
+  .line::after{
+    content: '';
+    position: absolute;
+    top: 113px;
+    left: -110%;
+    height: 0.4rem;
+    width: 211%;
+    border-radius: 5px;
+    border-bottom: white 1px solid;
+  }
 }
 @media screen and (max-width: 1399px) {
-  /* here */
+  .line::after{
+    content: '';
+    position: absolute;
+    top: 113px;
+    left: -103%;
+    height: 0.4rem;
+    width: 211%;
+    border-radius: 5px;
+    border-bottom: white 1px solid;
+  }
 }
 
 @media screen and (max-width: 320px) {
