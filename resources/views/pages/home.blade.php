@@ -83,11 +83,7 @@
 {{-- Desktop --}}
 <section id="section-simular" class="w-screen h-screen bg-cover bg-center hidden md:flex bg-[#DFEEF6] px-[40px] md:px-64 mb-16" style="background-image: url('./assets/images/background3.png');">
 
- <div class="grid grid-cols-2">
-
-  <div></div>
-
-    <div class="my-auto">
+    <div class="my-auto justify-end">
       <div id class="bg-white px-14 py-10 pb-16 rounded-xl drop-shadow-md min-w-[38rem] max-w-[42rem]">
         <h2 class="text-center text-2xl font-bold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
         <p class="text-center text-2xl font-bold text-[#23A6F0] mb-10">Simule já</p>
@@ -114,7 +110,6 @@
         </form>
       </div>
       <input id="submit-simule" type="button" class="text-xl text-white font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="SIMULE">
-  </div>
 </section>
 
 {{-- Mobile --}}
@@ -122,15 +117,15 @@
      
   <div class="my-auto">
        <div id class="bg-white px-8 py-5 pb-16 rounded-xl drop-shadow-md">
-         <h2 class="text-center text-sm font-bold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
-         <p class="text-center text-sm font-bold text-[#23A6F0] mb-5">Simule já</p>
+         <h2 class="text-center text-sm font-extrabold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
+         <p class="text-center text-sm font-extrabold text-[#23A6F0] mb-5">Simule já</p>
  
          <form class="ajaxForm" method="POST">
            @csrf
            <div class="flex flex-wrap">
-             <input type="text" name="nome" placeholder="Nome" autocomplete="off" class="mb-2 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-             <input type="number" name="cnpj" placeholder="CNPJ" autocomplete="off" class="mb-2 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-             <input type="number" name="faturamento" placeholder="Faturamento" autocomplete="off" class="mb-2 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+             <input type="text" name="nome" placeholder="Nome" autocomplete="off" class="mb-3 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+             <input type="number" name="cnpj" placeholder="CNPJ" autocomplete="off" class="mb-3 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+             <input type="number" name="faturamento" placeholder="Faturamento" autocomplete="off" class="mb-3 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
            </div>
  
            <div class="grid grid-cols-6 gap-3">
