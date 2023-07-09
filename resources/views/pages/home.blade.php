@@ -2,10 +2,10 @@
 @section('conteudo')
 <section class="relative w-screen">
   <nav class="absolute px-5 md:px-64 flex top-0 left-0 right-0 z-10">
-    <img src="./assets/images/logo-safra-2-1.png" class="w-32 md:w-48" alt="logo safra">
+    <img src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra">
 
     <button class="ml-auto md:hidden">
-      <img class="w-4" src="./assets/images/🦆 icon _menu_.svg" alt="">
+      <img class="w-4" src="./assets/images/icon-menu.svg" alt="">
     </button>
 
     <ul class="hidden md:flex text-[#DCDCDC] text-xl	 items-center justify-end space-x-16 ml-auto ">
@@ -24,9 +24,9 @@
         <p class="text-white text-base font-base py-4 w-[80%] md:text-lg">Empréstimo fácil e rápido para sua empresa.</p>
         <a href="#section-simular" class="text-white p-3 px-5 font-bold w-full bg-[#23A6F0] text-xs rounded-full md:text-sm md:max-w-[200px] hover:bg-[#00003C] transition duration-300 ease-out">Simule e Contrate</a>
         <a class="text-white p-3 mb-10 mt-2 px-5 font-bold w-full border border-[#ffff] md:text-sm text-xs md:max-w-[200px] rounded-full hover:shadow-xl hover:shadow-[#FFFFFF] transition duration-700 ease-out">Saiba Mais</a>
-        <div class="flex justify-center align-center mb-5 md:hidden">
-          <img class="animate-pulse w-7" src="./assets/images/Vector.svg" alt="">
-        </div>
+        {{-- <div class="flex justify-center align-center mb-5 md:hidden">
+          <img class="animate-pulse w-7" src="./assets/images/arrow-down.svg" alt="">
+        </div> --}}
       </div>
   </div>
 </section>
