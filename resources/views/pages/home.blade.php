@@ -156,8 +156,8 @@
 <footer id="footer" class="py-4 md:hidden md:h-[238px] bg-[#23A6F0] px-[40px] md:px-64">
 
   <div class="grid grid-cols-3">
-    <div>
-      <img src="./assets/images/logo-safra.png" alt="">
+    <div class="flex">
+      <img class="my-auto" src="./assets/images/logo-safra.png" alt="">
     </div>
 
     <ul class="text-white text-[8px] mx-auto items-center space-y-[6px] md:text-lg md:flex md:justify-end md:space-x-16 md:ml-auto">
@@ -173,7 +173,12 @@
     </ul>
   </div>
 
-    <div class="w-full h-[1px] bg-white mt-4 opacity-30"></div>
+  <div class="w-full h-[1px] bg-white mt-4 opacity-30"></div>
+
+  <div class="flex mt-[8px]">
+    <p class="text-white text-[6px]">© 2023 All rights reserved.</p>
+    <p class="text-white text-end text-[6px]">Banco Safra S/A - CNPJ: 58.160.789/0001-28</p>
+  </div>
 
 </footer>
 
