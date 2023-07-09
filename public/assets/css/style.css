@@ -9,8 +9,7 @@ div.my-auto{
   left: calc(100% - 420px);
 }
 #submit-simule-mobile{
-  content: "";
   position: absolute;
   top: calc(100% - 30px);
-  left: calc(100% - 348px);
+  left: calc(25%);
 }

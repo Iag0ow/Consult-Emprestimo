@@ -140,7 +140,7 @@
   
           </form>
         </div>
-        <input id="submit-simule-mobile" type="button" class="text-xl text-white font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="SIMULE">
+        <input id="submit-simule-mobile" type="button" class="text-xs text-white font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="SIMULE">
       </div>
     </div>
  </section>
