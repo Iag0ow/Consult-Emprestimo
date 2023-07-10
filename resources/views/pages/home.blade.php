@@ -34,11 +34,11 @@
   </div>
 </section>
 
-<section id="section-certificado" class="bg-cover bg-center py-24 w-screen px-[40px] md:px-64 {{-- py-44 --}}" style="background-image: url('./assets/images/background2.png');;">
+<section id="section-certificado" class="bg-cover bg-center sm:py-12 md:py-24 w-screen px-[40px] md:px-64 {{-- py-44 --}}" style="background-image: url('./assets/images/background2.png');;">
 
-  <div id="texto-certificado" class="justify-center items-center mt-[65px] ">
+  <div id="texto-certificado" class="justify-center items-center mt-[65px]">
     <h2 id="certificado" class="text-center text-xl md:text-6xl font-semibold text-black">Certificado Digital</h2>
-    <p class="text-center text-xs md:text-lg pt-4">Adquira um certificado digital confiável para garantir a segurança e agilidade na <br>obtenção de empréstimos.</p>
+    <p class="text-center text-xs md:text-lg pt-4 py-8">Adquira um certificado digital confiável para garantir a segurança e agilidade na <br>obtenção de empréstimos.</p>
   </div>
 
   {{-- Desktop --}}
