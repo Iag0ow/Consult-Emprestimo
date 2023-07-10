@@ -5,7 +5,7 @@
     <nav id="nav" class="absolute px-5 md:px-64 flex top-0 left-0 right-0 z-10">
       <img id="image-nav" src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra">
   
-      <button class="ml-auto md:hidden sidenav-trigger" onclick="openNav()">
+      <button id="sidenav-trigger" class="ml-auto md:hidden" onclick="openNav()">
         <img class="w-4" src="./assets/images/icon-menu.svg" alt="">
       </button>
   
@@ -28,7 +28,7 @@
         <a class="link" onclick="closeNav()" href="#certificado"><span>Certificado</span></a>
       </li>
       <li class="nav-item opcao">
-        <a class="link" onclick="closeNav()" href="#section-simular"><span>Contrate</span></a>
+        <a class="link" onclick="closeNav()" href="#formulario-simulacao-mobile"><span>Contrate</span></a>
       </li>
       <li class="nav-item opcao">
         <a class="link" onclick="closeNav()" href="#footer"><span>Contato</span></a>
@@ -558,10 +558,12 @@
 <script>
     function openNav() {
     document.getElementById("mySidenav").style.width = "320px";
+    document.getElementById("sidenav-trigger").style.display = "none";
   }
 
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("sidenav-trigger").style.display = "block";
   }
 </script>
 @endsection
