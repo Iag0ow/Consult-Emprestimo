@@ -19,7 +19,7 @@
   </div>
 
   <div id="mySidenav" class="sidenav md:hidden">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+    <button href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</button>
     <ul class="opcoes">
       <li>
         <a class="link" onclick="closeNav()" href="#"><span>Início</span></a>
