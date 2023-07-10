@@ -6,14 +6,13 @@ div.my-auto{
   content: "";
   position: absolute;
   top: calc(100% - 30px);
-  left: calc(100% - 420px);
+  left: calc(100% - 400px);
 }
 #submit-simule-mobile{
   position: absolute;
   top: calc(100% - 21px);
-  left: calc(30%);
+  left: calc(28%);
 }
-
 .button-certificado{
   content: "";
   position: absolute;

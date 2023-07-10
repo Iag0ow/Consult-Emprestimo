@@ -45,9 +45,9 @@
     content: '';
     position: absolute;
     top: 63px;
-    left: calc(19%);
+    left: calc(10%);
     height: 0.6rem;
-    width: calc(50% - -171px);
+    width: calc(50% - -410px);
     border-radius: 5px;
     border-bottom: white 1px solid;
   }
@@ -130,6 +130,14 @@
     padding-left: 140px;
     padding-right: 140px;
   }
+  #nav {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+  #hero-informacoes {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
   
 }
 
@@ -162,6 +170,14 @@
     }
     #lista > li > span {
       font-size: 16px;
+    }
+    #nav {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    #hero-informacoes {
+      padding-left: 40px;
+      padding-right: 40px;
     }
     #section-certificado {
       padding-left: 40px;
@@ -224,7 +240,8 @@
     width: 36%;
     background-color: #23A6F0;
     border-radius: 5px;
-}
+  }
+
 }
 
 @media screen and (min-width: 993px) {
