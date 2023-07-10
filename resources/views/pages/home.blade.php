@@ -120,7 +120,7 @@
 {{-- Desktop --}}
 <section id="section-simular" class="w-screen h-screen bg-cover bg-center hidden md:flex bg-[#DFEEF6] px-[40px] flex justify-end md:px-64" style="background-image: url('./assets/images/background3.png');">
     <div class="my-auto flex flex-end">
-      <div id class="bg-white px-14 py-10 pb-16 rounded-xl drop-shadow-md min-w-[38rem] max-w-[42rem]">
+      <div id="card-form" class="bg-white px-14 py-10 pb-16 rounded-xl drop-shadow-md min-w-[38rem] max-w-[42rem]">
         <h2 class="text-center text-2xl font-bold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
         <p class="text-center text-2xl font-bold text-[#23A6F0] mb-10">Simule já</p>
 
@@ -152,24 +152,24 @@
 {{-- Mobile --}}
 <section id="section-simular" class="flex w-screen h-screen bg-cover bg-center md:hidden bg-[#DFEEF6] px-[40px] md:px-64" style="background-image: url('./assets/images/background3.png');">
     <div class="my-auto">
-        <div id="card-form" class="bg-white px-8 py-5 pb-16 rounded-xl drop-shadow-md">
-          <h2 class="text-center text-sm font-extrabold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
-          <p class="text-center text-sm font-extrabold text-[#23A6F0] mb-5">Simule já</p>
+        <div class="bg-white px-8 py-5 pb-14 rounded-xl drop-shadow-md">
+          <h2 class="text-center text-md font-extrabold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
+          <p class="text-center text-md font-extrabold text-[#23A6F0] mb-5">Simule já</p>
   
           <form class="ajaxForm" method="POST">
             @csrf
             <div class="flex flex-wrap">
-              <input type="text" name="nome" placeholder="Nome" autocomplete="off" class="mb-3 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-              <input type="text" name="cnpj" placeholder="CNPJ" autocomplete="off" class="cnpj mb-3 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-              <input type="text" name="faturamento" placeholder="Faturamento" autocomplete="off" class="faturamento mb-3 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="text" name="nome" placeholder="Nome" autocomplete="off" class="mb-3 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="text" name="cnpj" placeholder="CNPJ" autocomplete="off" class="cnpj mb-3 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="text" name="faturamento" placeholder="Faturamento" autocomplete="off" class="faturamento mb-3 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
             </div>
   
             <div class="grid grid-cols-6 gap-3">
-              <input type="tel" name="ddd" placeholder="DDD" class="ddd col-span-2 mb-2 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-              <input type="tel" name="numero" placeholder="Telefone" class="js-phoneMask col-span-4 mb-2 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="tel" name="ddd" placeholder="DDD" class="ddd col-span-2 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="tel" name="numero" placeholder="Telefone" class="js-phoneMask col-span-4 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
             </div>
   
-            <div class="flex">
+            <div class="flex mt-2">
               <input class="mr-2" type="checkbox" name="whatsapp" id="whatsapp">
               <label class="text-[#B6B6B6] mr-2" for="whatsapp">WhatsApp</label>
               <img src="./assets/images/whatsapp.svg" alt="">
