@@ -45,4 +45,15 @@ class SiteController extends Controller
         Auth::logout();
         return Redirect::to('/login');
     }
+    public function simular()
+    {
+        return view('pages.simular');
+    }
+    public function simulacao(Request $request)
+    {
+        dd($request->all());
+        return view('pages.home', [
+            'titulo' => 'Home',
+        ]);
+    }
 }

@@ -117,28 +117,28 @@
         <h2 class="text-center text-2xl font-bold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
         <p class="text-center text-2xl font-bold text-[#23A6F0] mb-10">Simule já</p>
 
-        <form class="ajaxForm" method="POST">
+        <form id="formulario-simulacao" class="ajaxForm" method="POST">
           @csrf
           <div class="flex flex-wrap">
             <input type="text" name="nome" placeholder="Nome" autocomplete="off" class="mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-            <input type="number" name="cnpj" placeholder="CNPJ" autocomplete="off" class="mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-            <input type="number" name="faturamento" placeholder="Faturamento" autocomplete="off" class="mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+            <input type="text" name="cnpj" placeholder="CNPJ" autocomplete="off" class="cnpj mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+            <input name="faturamento" placeholder="Faturamento" autocomplete="off" class="faturamento mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500" maxlength="30">
           </div>
 
           <div class="grid grid-cols-6 gap-3">
-            <input type="number" name="ddd" placeholder="DDD" class="col-span-1 mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-            <input type="number" name="numero" placeholder="Telefone" class="col-span-5 mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+            <input type="tel" name="ddd" placeholder="DDD" class="ddd col-span-1 mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+            <input type="tel" name="numero" placeholder="Telefone" class="js-phoneMask col-span-5 mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
           </div>
 
           <div class="flex">
-            <input class="mr-2" type="checkbox" name="whatsapp" id="whatsapp">
+            <input class="mr-2" type="checkbox" name="whatsapp" id="whatsapp" value="WhatsApp">
             <label class="text-[#B6B6B6] mr-2" for="whatsapp">WhatsApp</label>
             <img src="./assets/images/whatsapp.svg" alt="">
           </div>
 
         </form>
       </div>
-      <input id="submit-simule" type="button" class="text-xl text-white font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="SIMULE">
+      <input id="submit-simule" type="submit" class="text-xl text-white font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="SIMULE" form="formulario-simulacao">
     </div>
 </section>
 
@@ -153,13 +153,13 @@
             @csrf
             <div class="flex flex-wrap">
               <input type="text" name="nome" placeholder="Nome" autocomplete="off" class="mb-3 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-              <input type="number" name="cnpj" placeholder="CNPJ" autocomplete="off" class="mb-3 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-              <input type="number" name="faturamento" placeholder="Faturamento" autocomplete="off" class="mb-3 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="text" name="cnpj" placeholder="CNPJ" autocomplete="off" class="cnpj mb-3 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="text" name="faturamento" placeholder="Faturamento" autocomplete="off" class="faturamento mb-3 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
             </div>
   
             <div class="grid grid-cols-6 gap-3">
-              <input type="number" name="ddd" placeholder="DDD" class="col-span-2 mb-2 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-              <input type="number" name="numero" placeholder="Telefone" class="col-span-4 mb-2 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="tel" name="ddd" placeholder="DDD" class="ddd col-span-2 mb-2 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="tel" name="numero" placeholder="Telefone" class="js-phoneMask col-span-4 mb-2 w-full px-3 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
             </div>
   
             <div class="flex">
@@ -264,7 +264,7 @@
   <div class="w-full h-[1px] bg-white opacity-30"></div>
 
   <div id="direitos" class="flex mt-[10px] justify-between">
-    <p class="text-white text-[12px]">© 2023 All rights reserved.</p>
+    <p class="text-white text-[12px]">© 2023 Todos os direitos reservados.</p>
     <p class="text-white text-[12px]">Banco Safra S/A - CNPJ: 58.160.789/0001-28</p>
   </div>
   
@@ -339,9 +339,53 @@
   });
 </script>
 
+<script src="./assets/js/sweetalert.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.ajaxForm').on('submit', function(e) {
+        e.preventDefault();
+        let form = $(this);
+        let data = form.serializeArray();
+        $('#submit-simule').prop('disabled', true);           
+            $.ajax({
+                type: 'POST',
+                url: '/simulacao',
+                data: data,
+                success: function(response) {
+                    swal({
+                        title: "Operação concluída com sucesso",
+                        icon: "success",
+                        button: "OK",
+                    }).then(function () {
+                        window.location.href = '/simulacao';
+                    });
+                },
+                error: function(error) {
+                    if(error.responseJSON.erro){
+                        swal({
+                            title: error.responseJSON.erro,
+                            icon: "error",
+                            button: "OK",
+                        });
+                    } else{
+                        swal({
+                            title: 'Preencha os dados',
+                            icon: "error",
+                            button: "OK",
+                        });
+                    }
+                },
+                complete: function() {
+                    $('#submit-simule').prop('disabled', false);
+                }
+            });
+        });
+    });
+</script>
 <script>
   $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
@@ -361,5 +405,55 @@
     });
   });
 </script>
+<script>
 
+    function inputPhoneMask(input) {
+      var input = document.querySelector(input);
+      $(input).mask("00000-00009");
+      input.onkeyup = function () {
+        var val = input.value;
+        var isNine = val.slice(5, 6);
+
+        if (isNine == 9) {
+          $(input).mask("00 0000-0000");
+        } else {
+          $(input).mask("00000-0000");
+        }
+      };
+  }
+  inputPhoneMask(".js-phoneMask");
+
+  function inputPhoneMaskDDD(input) {
+    var input = document.querySelector(input);
+      $(input).mask("(00)");
+      input.onkeyup = function () {
+        var val = input.value;
+        var isNine = val.slice(5, 6);
+
+        if (isNine == 9) {
+          $(input).mask("(00)");
+        } else {
+          $(input).mask("(00)");
+        }
+      };
+  }
+  inputPhoneMaskDDD(".ddd");
+
+  $(document).ready(function () {
+      var $cnpj = $(".cnpj");
+      $cnpj.mask('00.000.000/0000-00');
+    });
+    $(document).ready(function() {
+    var $faturamento = $(".faturamento");
+    $faturamento.maskMoney({
+      prefix: "R$ ",
+      thousands: ".",
+      decimal: ",",
+      precision: 2
+    });
+  });
+
+
+
+</script>
 @endsection
