@@ -60,7 +60,7 @@
         </a>
       </div>
       <div class="max-w-[414px] max-h-[273px] border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl bg-[#23a6f0] text-white">
-        <div class="iconsCertificado">
+        <div id="iconsCertificadoBlue" class="iconsCertificado">
           <svg width="40" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.8542 20.0492C13.8542 21.4638 14.9479 22.6013 16.2896 22.6013H19.0313C20.1979 22.6013 21.1459 21.6096 21.1459 20.37C21.1459 19.0429 20.5625 18.5617 19.7021 18.2554L15.3125 16.7242C14.4521 16.4179 13.8688 15.9512 13.8688 14.6096C13.8688 13.3846 14.8167 12.3783 15.9834 12.3783H18.725C20.0667 12.3783 21.1604 13.5158 21.1604 14.9304M17.5 10.9375V24.0625" stroke="#23A6F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M17.5 2.91663C9.45002 2.91663 2.91669 9.44996 2.91669 17.5C2.91669 23.2458 6.24169 28.2187 11.0834 30.5958M32.0834 17.5C32.0834 25.55 25.55 32.0833 17.5 32.0833M32.0834 8.74996V2.91663M32.0834 2.91663H26.25M32.0834 2.91663L24.7917 10.2083" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
