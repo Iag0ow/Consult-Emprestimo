@@ -29,9 +29,11 @@
         <button href="#section-certificado" class="text-white p-3 mb-10 mt-2 px-5 font-bold w-full border border-[#ffff] md:text-sm text-xs md:max-w-[200px] rounded-full hover:shadow-xl hover:shadow-[#FFFFFF] transition duration-700 ease-out"><a href="#section-certificado">Saiba Mais</a></button>        
       </div>
   </div>
+  <a href="#section-certificado">
     <svg class="iconScrol bounce" width="38" height="13" viewBox="0 0 38 13" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M36 2L22.005 9.62597C20.3523 10.5266 17.6477 10.5266 15.995 9.62597L2 2" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
     </svg> 
+  </a>
 </section>
 
 <section id="section-certificado" class="bg-cover bg-center sm:py-12 md:py-24 w-screen px-[40px] md:px-64 {{-- py-44 --}}" style="background-image: url('./assets/images/background2.png');;">
