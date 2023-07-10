@@ -43,3 +43,7 @@ div.my-auto{
 .owl-item {
   height: 355px !important;
 }
+.hero-text{
+  top: calc(50% - 81px);
+  bottom: 0;
+}
