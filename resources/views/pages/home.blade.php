@@ -368,7 +368,10 @@
         event.preventDefault();
         var target = this.getAttribute('href');
         document.querySelector(target).scrollIntoView({
-          behavior: 'smooth'
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+          speed: 100000
         });
       });
     }
