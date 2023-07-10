@@ -3,13 +3,13 @@
 <section class="relative w-screen line">
   <div class="relative">
     <nav class="absolute px-5 md:px-64 flex top-0 left-0 right-0 z-10">
-      <img src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra">
+      <img id="image-nav" src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra">
   
       <button class="ml-auto md:hidden">
-        <img class="w-4" src="./assets/images/icon-menu.svg" alt="">
+        <img  class="w-4" src="./assets/images/icon-menu.svg" alt="">
       </button>
   
-      <ul class="hidden md:flex text-[#DCDCDC] text-xl items-center justify-end space-x-16 ml-auto ">
+      <ul id="lista-nav" class="hidden md:flex text-[#DCDCDC] text-xl items-center justify-end space-x-16 ml-auto ">
         <li class="hover:text-white transition duration-300 ease-out"><a href="#">Início</a></li>
         <li class="hover:text-white transition duration-300 ease-out"><a href="#certificado">Certificado</a></li>
         <li class="hover:text-white transition duration-300 ease-out"><a href="#section-simular">Contrate</a></li>
@@ -22,7 +22,7 @@
   <div class="bg-cover bg-center h-screen w-screen" style="background-image: url('./assets/images/hero1.png'); z-index: 1;"></div>
 
   <div class="absolute px-[40px] inset-x-0 bottom-0 flex md:px-64 md:top-0 md:items-center md:justify-start">
-      <div class="block items-center justify-center w-full max-w-md md:max-w-2xl">
+      <div id="hero" class="block items-center justify-center w-full max-w-md md:max-w-2xl">
         <h1 class="text-4xl text-white font-extrabold md:text-7xl">Crédito Digital <br> Safra</h1>
         <p class="text-white text-base font-base py-4 w-[80%] md:text-lg">Empréstimo fácil e rápido para sua empresa.</p>
         <button class="text-white p-3 px-5 font-bold w-full bg-[#23A6F0] text-xs rounded-full md:text-sm md:max-w-[200px] hover:bg-[#00003C] transition duration-300 ease-out"><a href="#section-simular">Simule e Contrate</a></button>
@@ -34,15 +34,15 @@
   </div>
 </section>
 
-<section id="section-certificado" class="bg-cover bg-center h-screen w-screen px-[40px] md:px-64 {{-- py-44 --}}" style="background-image: url('./assets/images/background2.png');;">
+<section id="section-certificado" class="bg-cover bg-center md:h-screen w-screen px-[40px] md:px-64 {{-- py-44 --}}" style="background-image: url('./assets/images/background2.png');;">
 
-  <div class="justify-center items-center mb-16">
-    <h2 id="certificado" class="text-center text-4xl md:text-6xl font-semibold text-black">Certificado Digital</h2>
+  <div id="texto-certificado" class="justify-center items-center mt-[65px]">
+    <h2 id="certificado" class="text-center text-xl md:text-6xl font-semibold text-black">Certificado Digital</h2>
     <p class="text-center text-xs md:text-lg pt-4">Adquira um certificado digital confiável para garantir a segurança e agilidade na <br>obtenção de empréstimos.</p>
   </div>
 
   {{-- Desktop --}}
-  <div class="hidden md:block">
+  <div id="card-certificado" class="hidden md:block">
     <div class="grid grid-cols-3 gap-4">
       <div class="max-w-[414px] max-h-[273px] border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl">
         <div class="iconsCertificado">
@@ -59,6 +59,7 @@
           </svg>
         </a>
       </div>
+<<<<<<< HEAD
       <div class="max-w-[414px] max-h-[273px] border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl bg-[#23a6f0] text-white">
         <div class="iconsCertificado">
           <svg width="40" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,6 +67,9 @@
             <path d="M17.5 2.91663C9.45002 2.91663 2.91669 9.44996 2.91669 17.5C2.91669 23.2458 6.24169 28.2187 11.0834 30.5958M32.0834 17.5C32.0834 25.55 25.55 32.0833 17.5 32.0833M32.0834 8.74996V2.91663M32.0834 2.91663H26.25M32.0834 2.91663L24.7917 10.2083" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>        
+=======
+      <div class="max-w-[414px] max-h-[273px] border border-[#23A6F0] rounded-md p-8 mx-auto drop-shadow-2xl bg-[#23a6f0] text-white">
+>>>>>>> c9dd53cc5df2bbdb4c259c078af208403d4799b3
         <h3 class="text-center text-2xl font-bold">Facilidade de Empréstimo</h3>
         <p class="text-center text-base	mt-3">Simplifique o processo de empréstimo com um certificado digital, agilizando solicitações e análises de crédito de forma segura e conveniente.</p>
         <a type="button" class="button-certificado button-certificado-middle  text-xs border border-[#ffffff]  text-white font-bold py-0 px-12 rounded-full bg-[#23a6f0] hover:bg-[#ffffff] transition duration-300 ease-out cursor-pointer">
@@ -98,14 +102,29 @@
       <div class="w-full border border-[#B7B7B7] h-[209px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
         <h3 class="text-center text-base font-bold">Confiabilidade e Autenticidade</h3>
         <p class="text-center text-sm mt-3">Aumente a confiança dos seus clientes ao exibir o cadeado verde e o "https://" na barra de endereço, indicando um site autêntico e seguro.</p>
+        <a type="button" class="button-certificado text-xs border border-[#23a6f0]  text-white font-bold py-0 px-12 rounded-full bg-[white] hover:bg-[#23a6f0] transition duration-300 ease-out cursor-pointer">
+          <svg class="svg-hover" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.4033 13.2491L27.7803 13.2491L27.7803 23.6261M13.2491 27.7803L27.635 13.3944" stroke="#23A6F0" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </div>
       <div class="w-full border border-[#B7B7B7] h-[209px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
         <h3 class="text-center text-base font-bold">Facilidade de Empréstimo</h3>
         <p class="text-center text-sm mt-3">Simplifique o processo de empréstimo com um certificado digital, agilizando solicitações e análises de crédito de forma segura e conveniente.</p>
+        <a type="button" class="button-certificado button-certificado-middle  text-xs border border-[#ffffff]  text-white font-bold py-0 px-12 rounded-full bg-[#23a6f0] hover:bg-[#ffffff] transition duration-300 ease-out cursor-pointer">
+          <svg class="svg-hover" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.4033 13.2491L27.7803 13.2491L27.7803 23.6261M13.2491 27.7803L27.635 13.3944" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </div>
       <div class="w-full border border-[#B7B7B7] h-[209px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
         <h3 class="text-center text-base font-bold">Facilidade de Empréstimo</h3>
         <p class="text-center text-sm mt-3">Simplifique o processo de empréstimo com um certificado digital, agilizando solicitações e análises de crédito de forma segura e conveniente.</p>
+        <a type="button" class="button-certificado text-xs border border-[#23a6f0]  text-white font-bold py-0 px-12 rounded-full bg-[white] hover:bg-[#23a6f0] transition duration-300 ease-out cursor-pointer">
+          <svg class="svg-hover" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.4033 13.2491L27.7803 13.2491L27.7803 23.6261M13.2491 27.7803L27.635 13.3944" stroke="#23A6F0" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -115,7 +134,7 @@
 {{-- Desktop --}}
 <section id="section-simular" class="w-screen h-screen bg-cover bg-center hidden md:flex bg-[#DFEEF6] px-[40px] flex justify-end md:px-64" style="background-image: url('./assets/images/background3.png');">
     <div class="my-auto flex flex-end">
-      <div id class="bg-white px-14 py-10 pb-16 rounded-xl drop-shadow-md min-w-[38rem] max-w-[42rem]">
+      <div id="card-form" class="bg-white px-14 py-10 pb-16 rounded-xl drop-shadow-md min-w-[38rem] max-w-[42rem]">
         <h2 class="text-center text-2xl font-bold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
         <p class="text-center text-2xl font-bold text-[#23A6F0] mb-10">Simule já</p>
 
@@ -180,8 +199,8 @@
 
  {{-- Desktop/Mobile --}}
 
- <section class="flex px-[40px] h-screen md:px-64" style="background-image: url('./assets/images/background4.png');">
-  <div class="md:grid md:grid-cols-2">
+ <section id="section-melhor-opcao" class="flex px-[40px] h-screen md:px-64" style="background-image: url('./assets/images/background4.png');">
+  <div class="md:grid md:grid-cols-2 mt-10">
 
     <div class="md:hidden flex my-auto">
       <img class="w-[247px] mx-auto" src="./assets/images/imagemdinheiro.png" alt="">
@@ -295,7 +314,7 @@
     content: '';
     position: absolute;
     top: calc(100% - -3px);
-    left: calc(29.5%);
+    left: calc(28.6%);
     height: 0.4rem;
     width: 22%;
     background-color: #23A6F0;
@@ -401,7 +420,7 @@
           items: 1
         },
         768: {
-          items: 3
+          items: 2
         }
       }
     });

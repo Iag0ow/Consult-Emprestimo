@@ -10,8 +10,8 @@ div.my-auto{
 }
 #submit-simule-mobile{
   position: absolute;
-  top: calc(100% - 30px);
-  left: calc(25%);
+  top: calc(100% - 21px);
+  left: calc(30%);
 }
 
 .button-certificado{
@@ -36,4 +36,8 @@ div.my-auto{
   border-radius: 50%;
   padding: 10px;
   display: inline-block;
+}
+
+.owl-item {
+  height: 355px !important;
 }
