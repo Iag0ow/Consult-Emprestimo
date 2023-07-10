@@ -530,7 +530,5 @@
     });
   });
 
-
-
 </script>
 @endsection
