@@ -186,14 +186,14 @@
           <form class="ajaxForm2" method="POST">
             @csrf
             <div class="flex flex-wrap">
-              <input type="text" name="nome" placeholder="Nome" autocomplete="off" class="text-xs mb-2 w-full px-2 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
-              <input type="text" name="cnpj" placeholder="CNPJ" autocomplete="off" class="cnpj text-xs mb-2 w-full px-2 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
-              <input type="text" name="faturamento" placeholder="Faturamento" autocomplete="off" class="faturamento text-xs  mb-2 w-full px-2 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input type="text" name="nome" placeholder="Nome" autocomplete="off" class="text-xs mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input type="text" name="cnpj" placeholder="CNPJ" autocomplete="off" class="cnpj text-xs mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input type="text" name="faturamento" placeholder="Faturamento" autocomplete="off" class="faturamento text-xs  mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
             </div>
   
             <div class="grid grid-cols-6 gap-3">
-              <input type="tel" name="ddd" placeholder="DDD" class="ddd2 text-xs col-span-2 mb-2 w-full px-2 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
-              <input type="tel" name="numero" placeholder="Telefone" class="js-phoneMask2 text-xs col-span-4 mb-2 w-full px-2 py-2 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input type="tel" name="ddd" placeholder="DDD" class="ddd2 text-xs col-span-2 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input type="tel" name="numero" placeholder="Telefone" class="js-phoneMask2 text-xs col-span-4 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
             </div>
   
             <div class="flex mt-2">
