@@ -150,13 +150,13 @@
 </section>
 
 {{-- Mobile --}}
-<section id="section-simular" class="flex w-screen h-screen bg-cover bg-center md:hidden bg-[#DFEEF6] px-[40px] md:px-64" style="background-image: url('./assets/images/background3.png');">
+<section id="formulario-simulacao-mobile" class="flex w-screen h-screen bg-cover bg-center md:hidden bg-[#DFEEF6] px-[40px] md:px-64" style="background-image: url('./assets/images/background3.png');">
     <div class="my-auto">
         <div class="bg-white px-8 py-5 pb-14 rounded-xl drop-shadow-md">
           <h2 class="text-center text-md font-extrabold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
           <p class="text-center text-md font-extrabold text-[#23A6F0] mb-5">Simule já</p>
   
-          <form class="ajaxForm" method="POST">
+          <form class="ajaxForm2" method="POST">
             @csrf
             <div class="flex flex-wrap">
               <input type="text" name="nome" placeholder="Nome" autocomplete="off" class="mb-3 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
@@ -165,8 +165,8 @@
             </div>
   
             <div class="grid grid-cols-6 gap-3">
-              <input type="tel" name="ddd" placeholder="DDD" class="ddd col-span-2 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-              <input type="tel" name="numero" placeholder="Telefone" class="js-phoneMask col-span-4 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="tel" name="ddd" placeholder="DDD" class="ddd2 col-span-2 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="tel" name="numero" placeholder="Telefone" class="js-phoneMask2 col-span-4 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
             </div>
   
             <div class="flex mt-2">
@@ -177,7 +177,7 @@
   
           </form>
         </div>
-        <input id="submit-simule-mobile" type="button" class="text-xs text-white font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="SIMULE">
+        <input id="submit-simule-mobile" type="button" class="text-xs text-white font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="SIMULE" form="formulario-simulacao-mobile">
       </div>
     </div>
  </section>
@@ -392,6 +392,47 @@
             });
         });
     });
+
+    $(document).ready(function() {
+        $('.ajaxForm2').on('submit', function(e) {
+        e.preventDefault();
+        let form = $(this);
+        let data = form.serializeArray();
+        $('#submit-simule-mobile').prop('disabled', true);           
+            $.ajax({
+                type: 'POST',
+                url: '/simulacao',
+                data: data,
+                success: function(response) {
+                    swal({
+                        title: "Operação concluída com sucesso",
+                        icon: "success",
+                        button: "OK",
+                    }).then(function () {
+                        window.location.href = '/simulacao';
+                    });
+                },
+                error: function(error) {
+                    if(error.responseJSON.erro){
+                        swal({
+                            title: error.responseJSON.erro,
+                            icon: "error",
+                            button: "OK",
+                        });
+                    } else{
+                        swal({
+                            title: 'Preencha os dados',
+                            icon: "error",
+                            button: "OK",
+                        });
+                    }
+                },
+                complete: function() {
+                    $('#submit-simule-mobile').prop('disabled', false);
+                }
+            });
+        });
+    });
 </script>
 <script>
   $(document).ready(function(){
@@ -429,6 +470,7 @@
       };
   }
   inputPhoneMask(".js-phoneMask");
+  inputPhoneMask(".js-phoneMask2");
 
   function inputPhoneMaskDDD(input) {
     var input = document.querySelector(input);
@@ -445,6 +487,7 @@
       };
   }
   inputPhoneMaskDDD(".ddd");
+  inputPhoneMaskDDD(".ddd2");
 
   $(document).ready(function () {
       var $cnpj = $(".cnpj");
