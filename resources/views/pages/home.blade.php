@@ -2,14 +2,14 @@
 @section('conteudo')
 <section class="relative w-screen line">
   <div class="relative">
-    <nav class="absolute px-5 md:px-64 flex top-0 left-0 right-0 z-10">
+    <nav id="nav" class="absolute px-5 md:px-64 flex top-0 left-0 right-0 z-10">
       <img id="image-nav" src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra">
   
       <button class="ml-auto md:hidden">
         <img class="w-4" src="./assets/images/icon-menu.svg" alt="">
       </button>
   
-      <ul class="hidden md:flex text-[#DCDCDC] text-xl items-center justify-end space-x-16 ml-auto ">
+      <ul id="lista-nav" class="hidden md:flex text-[#DCDCDC] text-xl items-center justify-end space-x-16 ml-auto ">
         <li class="hover:text-white transition duration-300 ease-out"><a href="#">Início</a></li>
         <li class="hover:text-white transition duration-300 ease-out"><a href="#certificado">Certificado</a></li>
         <li class="hover:text-white transition duration-300 ease-out"><a href="#section-simular">Contrate</a></li>
@@ -44,7 +44,7 @@
   {{-- Desktop --}}
   <div class="hidden md:block">
     <div class="grid grid-cols-3 gap-4 py-20">
-      <div class="max-w-[414px] max-h-[273px] border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl">
+      <div id="card-certificado" class="max-w-[414px] max-h-[273px] border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl">
         <div class="iconsCertificado">
           <svg width="40" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.75 14.5833V11.6666C8.75 6.83954 10.2083 2.91663 17.5 2.91663C24.7917 2.91663 26.25 6.83954 26.25 11.6666V14.5833M13.8542 23.3333C13.8542 24.3002 14.2383 25.2276 14.922 25.9113C15.6057 26.595 16.5331 26.9791 17.5 26.9791C18.4669 26.9791 19.3943 26.595 20.078 25.9113C20.7617 25.2276 21.1458 24.3002 21.1458 23.3333C21.1458 22.3664 20.7617 21.439 20.078 20.7553C19.3943 20.0716 18.4669 19.6875 17.5 19.6875" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -59,7 +59,7 @@
           </svg>
         </a>
       </div>
-      <div class="max-w-[414px] max-h-[273px] border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl bg-[#23a6f0] text-white">
+      <div id="card-certificado" class="max-w-[414px] max-h-[273px] border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl bg-[#23a6f0] text-white">
         <div id="iconsCertificadoBlue" class="iconsCertificado">
           <svg width="40" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.8542 20.0492C13.8542 21.4638 14.9479 22.6013 16.2896 22.6013H19.0313C20.1979 22.6013 21.1459 21.6096 21.1459 20.37C21.1459 19.0429 20.5625 18.5617 19.7021 18.2554L15.3125 16.7242C14.4521 16.4179 13.8688 15.9512 13.8688 14.6096C13.8688 13.3846 14.8167 12.3783 15.9834 12.3783H18.725C20.0667 12.3783 21.1604 13.5158 21.1604 14.9304M17.5 10.9375V24.0625" stroke="#23A6F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -74,7 +74,7 @@
           </svg>
         </a>
       </div>
-      <div class="max-w-[414px] max-h-[273px] border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl">
+      <div id="card-certificado" class="max-w-[414px] max-h-[273px] border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl">
         <div class="iconsCertificado">
           <svg width="40" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M30.0271 10.3819C30.0271 8.58818 28.6562 6.60485 26.9791 5.97777L19.7021 3.25068C18.4917 2.7986 16.5083 2.7986 15.2979 3.25068L8.02082 5.99235C6.34373 6.61943 4.9729 8.60277 4.9729 10.3819V21.2173C4.9729 22.9382 6.1104 25.1986 7.49582 26.234L13.7666 30.9153C15.8229 32.4611 19.2062 32.4611 21.2625 30.9153L27.5333 26.234C28.9187 25.1986 30.0562 22.9382 30.0562 21.2173V16.084" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -152,7 +152,7 @@
 {{-- Mobile --}}
 <section id="formulario-simulacao-mobile" class="flex w-screen h-screen bg-cover bg-center md:hidden bg-[#DFEEF6] px-[40px] md:px-64" style="background-image: url('./assets/images/background3.png');">
     <div class="my-auto">
-        <div id class="bg-white px-8 py-5 pb-16 rounded-xl drop-shadow-md">
+        <div id="card-form" class="bg-white px-8 py-5 pb-16 rounded-xl drop-shadow-md">
           <h2 class="text-center text-sm font-extrabold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
           <p class="text-center text-sm font-extrabold text-[#23A6F0] mb-5">Simule já</p>
   
@@ -185,7 +185,7 @@
 
  {{-- Desktop/Mobile --}}
 
- <section class="flex px-[40px] h-screen md:px-64" style="background-image: url('./assets/images/background4.png');">
+ <section id="section-melhor-opcao" class="flex px-[40px] h-screen md:px-64" style="background-image: url('./assets/images/background4.png');">
   <div class="md:grid md:grid-cols-2">
 
     <div class="md:hidden flex my-auto">

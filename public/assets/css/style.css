@@ -6,7 +6,7 @@ div.my-auto{
   content: "";
   position: absolute;
   top: calc(100% - 30px);
-  left: calc(100% - 400px);
+  left: calc(100% - 428px);
 }
 #submit-simule-mobile{
   position: absolute;
