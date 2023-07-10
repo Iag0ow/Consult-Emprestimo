@@ -5,7 +5,7 @@
     <nav id="nav" class="absolute px-5 md:px-64 flex top-0 left-0 right-0 z-10">
       <img id="image-nav" src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra">
   
-      <button class="ml-auto md:hidden">
+      <button class="ml-auto md:hidden sidenav-trigger" onclick="openNav()">
         <img class="w-4" src="./assets/images/icon-menu.svg" alt="">
       </button>
   
@@ -18,6 +18,23 @@
     </nav>
   </div>
 
+  <div id="mySidenav" class="sidenav md:hidden">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+    <ul class="opcoes">
+      <li>
+        <a class="link" onclick="closeNav()" href="#"><span>Início</span></a>
+      </li>
+      <li>
+        <a class="link" onclick="closeNav()" href="#certificado"><span>Certificado</span></a>
+      </li>
+      <li class="nav-item opcao">
+        <a class="link" onclick="closeNav()" href="#section-simular"><span>Contrate</span></a>
+      </li>
+      <li class="nav-item opcao">
+        <a class="link" onclick="closeNav()" href="#footer"><span>Contato</span></a>
+      </li>
+    </ul>
+  </div>
 
   <div class="bg-cover bg-center h-screen w-screen" style="background-image: url('./assets/images/hero1.png'); z-index: 1;"></div>
 
@@ -534,6 +551,14 @@
       precision: 2
     });
   });
+</script>
+<script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "320px";
+  }
 
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 </script>
 @endsection
