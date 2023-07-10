@@ -10,8 +10,8 @@ div.my-auto{
 }
 #submit-simule-mobile{
   position: absolute;
-  top: calc(100% - 30px);
-  left: calc(25%);
+  top: calc(100% - 21px);
+  left: calc(30%);
 }
 
 .button-certificado{
@@ -26,4 +26,8 @@ div.my-auto{
 
 .button-certificado-middle:hover .svg-hover path {
   stroke: #23a6f0;
+}
+
+.owl-item {
+  height: 355px !important;
 }

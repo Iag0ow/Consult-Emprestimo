@@ -16,37 +16,61 @@
     border-bottom: white 1px solid;
   }
 }
-@media screen and (max-width: 1699px) {
-  .line::after{
-    opacity: 0.5;
-    content: '';
-    position: absolute;
-    top: 100px;
-    left: calc(19%);
-    height: 0.4rem;
-    width: calc(50% - -171px);
-    border-radius: 5px;
-    border-bottom: white 1px solid;
-  }
-}
 @media screen and (max-width: 1399px) {
   .button-certificado svg {
     stroke: #ffffff;
   }
 }
+
 @media screen and (max-width: 1699px) {
+ nav {
+  padding-left: 10rem;
+  padding-right: 10rem;
+ }
+  #lista-nav > li {
+    font-size: 14px;
+  }
+
+  #image-nav {
+    width: 100px;
+  }
+  #hero h1{
+    font-size: 48px;
+  }
+  #hero p{
+    font-size: 16px;
+  }
   .line::after{
     opacity: 0.5;
     content: '';
     position: absolute;
-    top: 100px;
+    top: 63px;
     left: calc(19%);
-    height: 0.4rem;
+    height: 0.6rem;
     width: calc(50% - -171px);
     border-radius: 5px;
     border-bottom: white 1px solid;
   }
-
+  #texto-certificado h2{
+    font-size: 50px;
+    line-height: 1.5;
+  }
+  #texto-certificado p{
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  #card-certificado h2{
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  #card-certificado h3{
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  #card-certificado p{
+    font-size: 12px;
+    line-height: 1.5;
+  }
   #sua-melhor h2{
     font-size: 35px;
   }
@@ -74,19 +98,43 @@
   }
 
   #lista-footer > li {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   #direitos p{
-    font-size: 8px;
+    font-size: 10px;
+    line-height: 0.2;
+  }
+  #section-certificado {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+  #section-simular {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+  #card-form {
+    max-width: 32rem;
+  }
+  #card-form input{
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #section-melhor-opcao {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+  #footer {
+    padding-left: 140px;
+    padding-right: 140px;
   }
   
 }
 
 @media screen and (max-width: 1200px) {
-  nav{
-    border-bottom: white 1px solid;
-  }
+  
 }
 @media screen and (max-width: 320px) {
   /* here */
@@ -96,12 +144,87 @@
     content: '';
     display: none;
   }
-  nav{
-    border-bottom: white 1px solid;
-  }
 }
 @media screen and (max-width: 768px) {
-
+    #hero h1{
+      font-size: 36px;
+    }
+    #hero p{
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    #texto-certificado h2{
+      font-size: 30px;
+      line-height: 1.5;
+    }
+    #lista {
+      margin-bottom: 16px;
+    }
+    #lista > li > span {
+      font-size: 16px;
+    }
+    #section-certificado {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    #section-simular {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    #card-form {
+      max-width: 32rem;
+    }
+    #card-form input{
+      padding-left: 0.9rem;
+      padding-right: 0.9rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    #section-melhor-opcao {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    #footer {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+  #section-certificado {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #section-simular {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #card-form {
+    max-width: 32rem;
+  }
+  #card-form input{
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #section-melhor-opcao {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #certificado::after {
+    content: '';
+    position: absolute;
+    top: calc(100% - -3px);
+    left: calc(10%);
+    height: 0.4rem;
+    width: 36%;
+    background-color: #23A6F0;
+    border-radius: 5px;
+}
 }
 
 @media screen and (min-width: 993px) {

@@ -16,6 +16,9 @@
       tailwind.config = {
         theme: {
             extend: {
+            screens: {
+                'md': '1000px', // Altere o valor para o tamanho desejado
+            },
             colors: {
                 clifford: '#da373d',
             },
