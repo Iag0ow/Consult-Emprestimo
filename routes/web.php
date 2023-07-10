@@ -19,3 +19,5 @@ Route::get('/login', [SiteController::class, 'loginPage'])->name('site.index');
 Route::post('/login', [SiteController::class, 'login'])->name('site.login');
 Route::get('/logout', [SiteController::class, 'logout'])->name('site.logout');
 Route::get('/clientes', [SiteController::class, 'clientes'])->middleware('auth');
+Route::get('/simulacao', [SiteController::class, 'simular']);
+Route::post('/simulacao', [SiteController::class, 'simulacao'])->name('site.simulacao');
