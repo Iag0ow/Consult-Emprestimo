@@ -345,6 +345,9 @@
     border-radius: 5px;
     margin-top: 10px
   }
+  .owl-carousel {
+      width: 100%;
+    }
 
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
