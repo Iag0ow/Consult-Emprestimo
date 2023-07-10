@@ -21,7 +21,7 @@
 
   <div class="bg-cover bg-center h-screen w-screen" style="background-image: url('./assets/images/hero1.png'); z-index: 1;"></div>
 
-  <div class="absolute hero-text px-[48px] md:px-64">
+  <div id="hero-informacoes" class="absolute hero-text px-[48px] md:px-64">
       <div id="hero" class="block items-center justify-center w-full max-w-md md:max-w-2xl">
         <h1 class="text-4xl text-white font-extrabold md:text-7xl">Crédito Digital <br> Safra</h1>
         <p class="text-white text-base font-base py-4 w-[80%] md:text-lg">Empréstimo fácil e rápido para sua empresa.</p>
