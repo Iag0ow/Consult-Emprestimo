@@ -97,12 +97,12 @@
   <div class="md:hidden">
     <!-- Exibir como um carrossel Owl Carousel no modo mobile -->
     <div class="owl-carousel">
-      <div class="w-full border border-[#B7B7B7] h-[209px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
+      <div class="w-full border border-[#B7B7B7] h-[223px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
         <div class="iconsCertificado">
           <svg width="40" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.75 14.5833V11.6666C8.75 6.83954 10.2083 2.91663 17.5 2.91663C24.7917 2.91663 26.25 6.83954 26.25 11.6666V14.5833M13.8542 23.3333C13.8542 24.3002 14.2383 25.2276 14.922 25.9113C15.6057 26.595 16.5331 26.9791 17.5 26.9791C18.4669 26.9791 19.3943 26.595 20.078 25.9113C20.7617 25.2276 21.1458 24.3002 21.1458 23.3333C21.1458 22.3664 20.7617 21.439 20.078 20.7553C19.3943 20.0716 18.4669 19.6875 17.5 19.6875" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M32.0833 24.7917V21.875C32.0833 16.0417 30.625 14.5834 24.7917 14.5834H10.2083C4.37501 14.5834 2.91667 16.0417 2.91667 21.875V24.7917C2.91667 30.625 4.37501 32.0834 10.2083 32.0834H24.7917C27.3583 32.0834 29.0792 31.8063 30.2021 30.9896" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+          </svg>
         </div> 
         <h3 class="text-center mt-3 text-base font-bold">Confiabilidade e Autenticidade</h3>
         <p class="text-center text-sm my-3 mb-5">Aumente a confiança dos seus clientes ao exibir o cadeado verde e o "https://" na barra de endereço, indicando um site autêntico e seguro.</p>
@@ -262,7 +262,7 @@
 
     <ul class="text-white text-[8px] mx-auto items-center space-y-[6px] md:text-lg md:flex md:justify-end md:space-x-16 md:ml-auto">
       <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/sobre/relacoes-com-investidores/informacoes-financeiras.htm" target="_blank">Sobre</a></li>
-      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/seguros.htm" target="_blank">Seguro.</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/seguros.htm" target="_blank">Seguro</a></li>
       <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cambio.htm" target="_blank">Câmbio</a></li>
     </ul>
     

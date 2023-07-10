@@ -33,6 +33,9 @@
   #image-nav {
     width: 100px;
   }
+  #hero{
+    width: 110%;
+  }
   #hero h1{
     font-size: 48px;
   }
