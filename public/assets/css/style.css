@@ -36,6 +36,9 @@ div.my-auto{
   padding: 10px;
   display: inline-block;
 }
+#iconsCertificadoBlue{
+  border: 1px solid #23a6f0;
+}
 
 .owl-item {
   height: 355px !important;
