@@ -21,7 +21,7 @@
 
   <div class="bg-cover bg-center h-screen w-screen" style="background-image: url('./assets/images/hero1.png'); z-index: 1;"></div>
 
-  <div class="absolute hero-text px-[48px] md:px-64">
+  <div id="hero-informacoes" class="absolute hero-text px-[48px] md:px-64">
       <div id="hero" class="block items-center justify-center w-full max-w-md md:max-w-2xl">
         <h1 class="text-4xl text-white font-extrabold md:text-7xl">Crédito Digital <br> Safra</h1>
         <p class="text-white text-base font-base py-4 w-[80%] md:text-lg">Empréstimo fácil e rápido para sua empresa.</p>
@@ -102,8 +102,8 @@
             <path d="M32.0833 24.7917V21.875C32.0833 16.0417 30.625 14.5834 24.7917 14.5834H10.2083C4.37501 14.5834 2.91667 16.0417 2.91667 21.875V24.7917C2.91667 30.625 4.37501 32.0834 10.2083 32.0834H24.7917C27.3583 32.0834 29.0792 31.8063 30.2021 30.9896" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div> 
-        <h3 class="text-center text-base font-bold">Confiabilidade e Autenticidade</h3>
-        <p class="text-center text-sm mt-3">Aumente a confiança dos seus clientes ao exibir o cadeado verde e o "https://" na barra de endereço, indicando um site autêntico e seguro.</p>
+        <h3 class="text-center mt-3 text-base font-bold">Confiabilidade e Autenticidade</h3>
+        <p class="text-center text-sm my-3 mb-5">Aumente a confiança dos seus clientes ao exibir o cadeado verde e o "https://" na barra de endereço, indicando um site autêntico e seguro.</p>
         <a type="button" class="button-certificado text-xs border border-[#23a6f0]  text-white font-bold py-0 px-12 rounded-full bg-[white] hover:bg-[#23a6f0] transition duration-300 ease-out cursor-pointer">
           <svg class="svg-hover" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.4033 13.2491L27.7803 13.2491L27.7803 23.6261M13.2491 27.7803L27.635 13.3944" stroke="#23A6F0" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -117,8 +117,8 @@
             <path d="M17.5 2.91663C9.45002 2.91663 2.91669 9.44996 2.91669 17.5C2.91669 23.2458 6.24169 28.2187 11.0834 30.5958M32.0834 17.5C32.0834 25.55 25.55 32.0833 17.5 32.0833M32.0834 8.74996V2.91663M32.0834 2.91663H26.25M32.0834 2.91663L24.7917 10.2083" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>   
-        <h3 class="text-center text-base font-bold">Facilidade de Empréstimo</h3>
-        <p class="text-center text-sm mt-3">Simplifique o processo de empréstimo com um certificado digital, agilizando solicitações e análises de crédito de forma segura e conveniente.</p>
+        <h3 class="text-center mt-3 text-base font-bold">Facilidade de Empréstimo</h3>
+        <p class="text-center text-sm my-3">Simplifique o processo de empréstimo com um certificado digital, agilizando solicitações e análises de crédito de forma segura e conveniente.</p>
         <a type="button" class="button-certificado button-certificado-middle  text-xs border border-[#ffffff]  text-white font-bold py-0 px-12 rounded-full bg-[#23a6f0] hover:bg-[#ffffff] transition duration-300 ease-out cursor-pointer">
           <svg class="svg-hover" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.4033 13.2491L27.7803 13.2491L27.7803 23.6261M13.2491 27.7803L27.635 13.3944" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -131,8 +131,8 @@
             <path d="M30.0271 10.3819C30.0271 8.58818 28.6562 6.60485 26.9791 5.97777L19.7021 3.25068C18.4917 2.7986 16.5083 2.7986 15.2979 3.25068L8.02082 5.99235C6.34373 6.61943 4.9729 8.60277 4.9729 10.3819V21.2173C4.9729 22.9382 6.1104 25.1986 7.49582 26.234L13.7666 30.9153C15.8229 32.4611 19.2062 32.4611 21.2625 30.9153L27.5333 26.234C28.9187 25.1986 30.0562 22.9382 30.0562 21.2173V16.084" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>  
-        <h3 class="text-center text-base font-bold">Facilidade de Empréstimo</h3>
-        <p class="text-center text-sm mt-3">Simplifique o processo de empréstimo com um certificado digital, agilizando solicitações e análises de crédito de forma segura e conveniente.</p>
+        <h3 class="text-center mt-3 text-base font-bold">Facilidade de Empréstimo</h3>
+        <p class="text-center text-sm my-3">Simplifique o processo de empréstimo com um certificado digital, agilizando solicitações e análises de crédito de forma segura e conveniente.</p>
         <a type="button" class="button-certificado text-xs border border-[#23a6f0]  text-white font-bold py-0 px-12 rounded-full bg-[white] hover:bg-[#23a6f0] transition duration-300 ease-out cursor-pointer">
           <svg class="svg-hover" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.4033 13.2491L27.7803 13.2491L27.7803 23.6261M13.2491 27.7803L27.635 13.3944" stroke="#23A6F0" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -179,27 +179,27 @@
 {{-- Mobile --}}
 <section id="formulario-simulacao-mobile" class="flex w-screen h-screen bg-cover bg-center md:hidden bg-[#DFEEF6] px-[40px] md:px-64" style="background-image: url('./assets/images/background3.png');">
     <div class="my-auto">
-        <div class="bg-white px-6 py-5 pb-14 rounded-xl drop-shadow-md">
+        <div class="bg-white px-6 py-4 pb-14 rounded-xl drop-shadow-md">
           <h2 class="text-center text-md font-extrabold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
           <p class="text-center text-md font-extrabold text-[#23A6F0] mb-5">Simule já</p>
   
           <form class="ajaxForm2" method="POST">
             @csrf
             <div class="flex flex-wrap">
-              <input type="text" name="nome" placeholder="Nome" autocomplete="off" class="mb-3 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-              <input type="text" name="cnpj" placeholder="CNPJ" autocomplete="off" class="cnpj mb-3 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-              <input type="text" name="faturamento" placeholder="Faturamento" autocomplete="off" class="faturamento mb-3 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="text" name="nome" placeholder="Nome" autocomplete="off" class="text-xs mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input type="text" name="cnpj" placeholder="CNPJ" autocomplete="off" class="cnpj text-xs mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input type="text" name="faturamento" placeholder="Faturamento" autocomplete="off" class="faturamento text-xs  mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
             </div>
   
             <div class="grid grid-cols-6 gap-3">
-              <input type="tel" name="ddd" placeholder="DDD" class="ddd2 col-span-2 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-              <input type="tel" name="numero" placeholder="Telefone" class="js-phoneMask2 col-span-4 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+              <input type="tel" name="ddd" placeholder="DDD" class="ddd2 text-xs col-span-2 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input type="tel" name="numero" placeholder="Telefone" class="js-phoneMask2 text-xs col-span-4 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
             </div>
   
             <div class="flex mt-2">
               <input class="mr-2" type="checkbox" name="whatsapp" id="whatsapp">
-              <label class="text-[#B6B6B6] mr-2" for="whatsapp">WhatsApp</label>
-              <img src="./assets/images/whatsapp.svg" alt="">
+              <label class="text-[#B6B6B6] my-auto text-xs mr-2" for="whatsapp">WhatsApp</label>
+              <img style="width: 16px;" src="./assets/images/whatsapp.svg" alt="">
             </div>
   
           </form>
@@ -337,7 +337,7 @@
   #melhor::after{
     content: '';
     display: block;
-    width: 15rem;
+    width: 12rem;
     height: 0.4rem;
     background-color: #23A6F0;
     margin: 0 auto;
@@ -529,8 +529,6 @@
       precision: 2
     });
   });
-
-
 
 </script>
 @endsection
