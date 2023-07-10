@@ -42,14 +42,14 @@
       <div id="hero" class="block items-center justify-center w-full max-w-md md:max-w-2xl">
         <h1 class="text-4xl text-white font-extrabold md:text-7xl">Crédito Digital <br> Safra</h1>
         <p class="text-white text-base font-base py-4 w-[80%] md:text-lg">Empréstimo fácil e rápido para sua empresa.</p>
-        <button class="text-white p-3 px-5 font-bold w-full bg-[#23A6F0] text-xs rounded-full md:text-sm md:max-w-[200px] hover:bg-[#00003C] transition duration-300 ease-out"><a href="#section-simular">Simule e Contrate</a></button>
-        <button href="#section-certificado" class="text-white p-3 mb-10 mt-2 px-5 font-bold w-full border border-[#ffff] md:text-sm text-xs md:max-w-[200px] rounded-full hover:shadow-xl hover:shadow-[#FFFFFF] transition duration-700 ease-out"><a href="#section-certificado">Saiba Mais</a></button>        
+        <a href="#section-simular"><button class="text-white p-3 px-5 font-bold w-full bg-[#23A6F0] text-sm rounded-full md:text-base	 md:max-w-[200px] hover:bg-[#00003C] transition duration-300 ease-out">Simule e Contrate</button></a>
+        <a href="#section-certificado"><button class="text-white p-3 mb-10 mt-2 px-5 font-bold w-full border border-[#ffff] md:text-base	 text-xs md:max-w-[200px] rounded-full hover:shadow-xl hover:shadow-[#FFFFFF] transition duration-700 ease-out">Saiba Mais</button></a>        
       </div>
   </div>
-  <a href="#section-certificado">
-    <svg class="iconScrol bounce" width="38" height="13" viewBox="0 0 38 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M36 2L22.005 9.62597C20.3523 10.5266 17.6477 10.5266 15.995 9.62597L2 2" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg> 
+  <a class="border border-white" href="#section-certificado">
+      <svg class="iconScrol bounce" width="38" height="13" viewBox="0 0 38 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M36 2L22.005 9.62597C20.3523 10.5266 17.6477 10.5266 15.995 9.62597L2 2" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg> 
   </a>
 </section>
 
@@ -63,7 +63,7 @@
   {{-- Desktop --}}
   <div class="hidden md:block">
     <div class="grid grid-cols-3 gap-4 py-20">
-      <div id="card-certificado" class="max-w-[414px] max-h-[273px] border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl">
+      <div id="card-certificado" class="max-w-[414px] max-h-[273px] bg-white border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl">
         <div class="iconsCertificado">
           <svg width="40" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.75 14.5833V11.6666C8.75 6.83954 10.2083 2.91663 17.5 2.91663C24.7917 2.91663 26.25 6.83954 26.25 11.6666V14.5833M13.8542 23.3333C13.8542 24.3002 14.2383 25.2276 14.922 25.9113C15.6057 26.595 16.5331 26.9791 17.5 26.9791C18.4669 26.9791 19.3943 26.595 20.078 25.9113C20.7617 25.2276 21.1458 24.3002 21.1458 23.3333C21.1458 22.3664 20.7617 21.439 20.078 20.7553C19.3943 20.0716 18.4669 19.6875 17.5 19.6875" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -93,7 +93,7 @@
           </svg>
         </a>
       </div>
-      <div id="card-certificado" class="max-w-[414px] max-h-[273px] border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl">
+      <div id="card-certificado" class="max-w-[414px] max-h-[273px] bg-white border border-[#B7B7B7] rounded-md p-8 mx-auto drop-shadow-2xl">
         <div class="iconsCertificado">
           <svg width="40" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M30.0271 10.3819C30.0271 8.58818 28.6562 6.60485 26.9791 5.97777L19.7021 3.25068C18.4917 2.7986 16.5083 2.7986 15.2979 3.25068L8.02082 5.99235C6.34373 6.61943 4.9729 8.60277 4.9729 10.3819V21.2173C4.9729 22.9382 6.1104 25.1986 7.49582 26.234L13.7666 30.9153C15.8229 32.4611 19.2062 32.4611 21.2625 30.9153L27.5333 26.234C28.9187 25.1986 30.0562 22.9382 30.0562 21.2173V16.084" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -114,7 +114,7 @@
   <div class="md:hidden">
     <!-- Exibir como um carrossel Owl Carousel no modo mobile -->
     <div class="owl-carousel">
-      <div class="w-full border border-[#B7B7B7] h-[223px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
+      <div class="w-full my-9 border border-[#B7B7B7] bg-white h-[223px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
         <div class="iconsCertificado">
           <svg width="40" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.75 14.5833V11.6666C8.75 6.83954 10.2083 2.91663 17.5 2.91663C24.7917 2.91663 26.25 6.83954 26.25 11.6666V14.5833M13.8542 23.3333C13.8542 24.3002 14.2383 25.2276 14.922 25.9113C15.6057 26.595 16.5331 26.9791 17.5 26.9791C18.4669 26.9791 19.3943 26.595 20.078 25.9113C20.7617 25.2276 21.1458 24.3002 21.1458 23.3333C21.1458 22.3664 20.7617 21.439 20.078 20.7553C19.3943 20.0716 18.4669 19.6875 17.5 19.6875" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -129,22 +129,22 @@
           </svg>
         </a>
       </div>
-      <div class="w-full border border-[#B7B7B7] h-[209px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
+      <div class="w-full my-9 border border-[#B7B7B7] bg-[#23a6f0] h-[209px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
         <div id="iconsCertificadoBlue" class="iconsCertificado">
           <svg width="40" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.8542 20.0492C13.8542 21.4638 14.9479 22.6013 16.2896 22.6013H19.0313C20.1979 22.6013 21.1459 21.6096 21.1459 20.37C21.1459 19.0429 20.5625 18.5617 19.7021 18.2554L15.3125 16.7242C14.4521 16.4179 13.8688 15.9512 13.8688 14.6096C13.8688 13.3846 14.8167 12.3783 15.9834 12.3783H18.725C20.0667 12.3783 21.1604 13.5158 21.1604 14.9304M17.5 10.9375V24.0625" stroke="#23A6F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M17.5 2.91663C9.45002 2.91663 2.91669 9.44996 2.91669 17.5C2.91669 23.2458 6.24169 28.2187 11.0834 30.5958M32.0834 17.5C32.0834 25.55 25.55 32.0833 17.5 32.0833M32.0834 8.74996V2.91663M32.0834 2.91663H26.25M32.0834 2.91663L24.7917 10.2083" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>   
-        <h3 class="text-center mt-3 text-base font-bold">Facilidade de Empréstimo</h3>
-        <p class="text-center text-sm my-3">Simplifique o processo de empréstimo com um certificado digital, agilizando solicitações e análises de crédito de forma segura e conveniente.</p>
+        <h3 class="text-center mt-3 text-white text-base font-bold">Facilidade de Empréstimo</h3>
+        <p class="text-center text-white text-sm my-3">Simplifique o processo de empréstimo com um certificado digital, agilizando solicitações e análises de crédito de forma segura e conveniente.</p>
         <a type="button" class="button-certificado button-certificado-middle  text-xs border border-[#ffffff]  text-white font-bold py-0 px-12 rounded-full bg-[#23a6f0] hover:bg-[#ffffff] transition duration-300 ease-out cursor-pointer">
           <svg class="svg-hover" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.4033 13.2491L27.7803 13.2491L27.7803 23.6261M13.2491 27.7803L27.635 13.3944" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
       </div>
-      <div class="w-full border border-[#B7B7B7] h-[209px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
+      <div class="w-full my-9 border border-[#B7B7B7] bg-white h-[209px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
         <div class="iconsCertificado">
           <svg width="40" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M30.0271 10.3819C30.0271 8.58818 28.6562 6.60485 26.9791 5.97777L19.7021 3.25068C18.4917 2.7986 16.5083 2.7986 15.2979 3.25068L8.02082 5.99235C6.34373 6.61943 4.9729 8.60277 4.9729 10.3819V21.2173C4.9729 22.9382 6.1104 25.1986 7.49582 26.234L13.7666 30.9153C15.8229 32.4611 19.2062 32.4611 21.2625 30.9153L27.5333 26.234C28.9187 25.1986 30.0562 22.9382 30.0562 21.2173V16.084" stroke="#23A6F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -197,7 +197,7 @@
 
 {{-- Mobile --}}
 <section id="formulario-simulacao-mobile" class="flex w-screen h-screen bg-cover bg-center md:hidden bg-[#DFEEF6] px-[40px] md:px-64" style="background-image: url('./assets/images/background3.png');">
-    <div class="my-auto">
+    <div id="section-simular" class="my-auto">
         <div class="bg-white px-6 py-4 pb-14 rounded-xl drop-shadow-md">
           <h2 class="text-center text-md font-extrabold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
           <p class="text-center text-md font-extrabold text-[#23A6F0] mb-5">Simule já</p>
@@ -305,12 +305,12 @@
     <img id="logo-footer" class="my-auto w-48" src="./assets/images/logo-safra2.png" alt="">
   
     <ul id="lista-footer" class="text-white text-sm items-center flex justify-end space-x-8">
-      <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/sobre/relacoes-com-investidores/informacoes-financeiras.htm" target="_blank">Sobre</a></li>
-      <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/seguros.htm" target="_blank">Seguro</a></li>
-      <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cambio.htm" target="_blank">Câmbio</a></li>
-      <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/investimentos.htm" target="_blank">Investimentos</a></li>
-      <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cartoes.htm" target="_blank">Cartão de Crédito</a></li>
-      <li class="transition duration-300 ease-out opacity-90 hover:opacity-100"><a href="https://www.safra.com.br/atendimento/atendimento-ao-cliente.htm" target="_blank">Atendimento ao cliente</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/sobre/relacoes-com-investidores/informacoes-financeiras.htm" target="_blank">Sobre</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/seguros.htm" target="_blank">Seguro</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cambio.htm" target="_blank">Câmbio</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/investimentos.htm" target="_blank">Investimentos</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/servicos/pessoa-fisica/cartoes.htm" target="_blank">Cartão de Crédito</a></li>
+      <li class="transition duration-300 ease-out"><a href="https://www.safra.com.br/atendimento/atendimento-ao-cliente.htm" target="_blank">Atendimento ao cliente</a></li>
     </ul>
   </div>
 
