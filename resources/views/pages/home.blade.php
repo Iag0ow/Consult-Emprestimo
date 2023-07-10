@@ -3,7 +3,7 @@
 <section class="relative w-screen line">
   <div class="relative">
     <nav class="absolute px-5 md:px-64 flex top-0 left-0 right-0 z-10">
-      <img src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra">
+      <img id="image-nav" src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra">
   
       <button class="ml-auto md:hidden">
         <img class="w-4" src="./assets/images/icon-menu.svg" alt="">
@@ -22,7 +22,7 @@
   <div class="bg-cover bg-center h-screen w-screen" style="background-image: url('./assets/images/hero1.png'); z-index: 1;"></div>
 
   <div class="absolute px-[40px] inset-x-0 bottom-0 flex md:px-64 md:top-0 md:items-center md:justify-start">
-      <div class="block items-center justify-center w-full max-w-md md:max-w-2xl">
+      <div id="hero" class="block items-center justify-center w-full max-w-md md:max-w-2xl">
         <h1 class="text-4xl text-white font-extrabold md:text-7xl">Crédito Digital <br> Safra</h1>
         <p class="text-white text-base font-base py-4 w-[80%] md:text-lg">Empréstimo fácil e rápido para sua empresa.</p>
         <button class="text-white p-3 px-5 font-bold w-full bg-[#23A6F0] text-xs rounded-full md:text-sm md:max-w-[200px] hover:bg-[#00003C] transition duration-300 ease-out"><a href="#section-simular">Simule e Contrate</a></button>
@@ -36,8 +36,8 @@
 
 <section id="section-certificado" class="bg-cover bg-center h-screen w-screen px-[40px] md:px-64 {{-- py-44 --}}" style="background-image: url('./assets/images/background2.png');;">
 
-  <div class="justify-center items-center mb-16">
-    <h2 id="certificado" class="text-center text-4xl md:text-6xl font-semibold text-black">Certificado Digital</h2>
+  <div id="texto-certificado" class="justify-center items-center mt-[65px]">
+    <h2 id="certificado" class="text-center text-xl md:text-6xl font-semibold text-black">Certificado Digital</h2>
     <p class="text-center text-xs md:text-lg pt-4">Adquira um certificado digital confiável para garantir a segurança e agilidade na <br>obtenção de empréstimos.</p>
   </div>
 
@@ -102,6 +102,11 @@
       <div class="w-full border border-[#B7B7B7] h-[209px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
         <h3 class="text-center text-base font-bold">Facilidade de Empréstimo</h3>
         <p class="text-center text-sm mt-3">Simplifique o processo de empréstimo com um certificado digital, agilizando solicitações e análises de crédito de forma segura e conveniente.</p>
+        <a type="button" class="button-certificado button-certificado-middle  text-xs border border-[#ffffff]  text-white font-bold py-0 px-12 rounded-full bg-[#23a6f0] hover:bg-[#ffffff] transition duration-300 ease-out cursor-pointer">
+          <svg class="svg-hover" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.4033 13.2491L27.7803 13.2491L27.7803 23.6261M13.2491 27.7803L27.635 13.3944" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </div>
       <div class="w-full border border-[#B7B7B7] h-[209px] rounded-md p-5 max-w-[18rem] mx-auto carousel-item drop-shadow-lg">
         <h3 class="text-center text-base font-bold">Facilidade de Empréstimo</h3>
@@ -128,8 +133,8 @@
           </div>
 
           <div class="grid grid-cols-6 gap-3">
-            <input type="tel" name="ddd" placeholder="DDD" class="ddd col-span-1 mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
-            <input type="tel" name="numero" placeholder="Telefone" class="js-phoneMask col-span-5 mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+            <input type="tel" name="ddd" placeholder="DDD" autocomplete="off" class="ddd col-span-1 mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
+            <input type="tel" name="numero" placeholder="Telefone" autocomplete="off" class="js-phoneMask col-span-5 mb-5 w-full px-5 py-5 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-2 focus:outline-none transition duration-500">
           </div>
 
           <div class="flex">
