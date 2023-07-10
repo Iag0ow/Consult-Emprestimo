@@ -179,7 +179,7 @@
 {{-- Mobile --}}
 <section id="formulario-simulacao-mobile" class="flex w-screen h-screen bg-cover bg-center md:hidden bg-[#DFEEF6] px-[40px] md:px-64" style="background-image: url('./assets/images/background3.png');">
     <div class="my-auto">
-        <div class="bg-white px-8 py-5 pb-14 rounded-xl drop-shadow-md">
+        <div class="bg-white px-6 py-5 pb-14 rounded-xl drop-shadow-md">
           <h2 class="text-center text-md font-extrabold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
           <p class="text-center text-md font-extrabold text-[#23A6F0] mb-5">Simule já</p>
   
@@ -212,7 +212,7 @@
 
  {{-- Desktop/Mobile --}}
 
- <section id="section-melhor-opcao" class="flex px-[40px] h-screen md:px-64" style="background-image: url('./assets/images/background4.png');">
+ <section id="section-melhor-opcao" class="flex px-[40px] py-10 md:py-28 md:px-64" style="background-image: url('./assets/images/background4.png');">
   <div class="md:grid md:grid-cols-2">
 
     <div class="md:hidden flex my-auto">
@@ -221,7 +221,7 @@
     
     <div class="my-auto">
       <div id="sua-melhor">
-        <h2 id="melhor" class="text-3xl text-center text-3xl font-bold text-black  md:text-5xl md:text-left">Sua melhor opção para <br><span class="text-[#23A6F0]"> Empréstimos</span></h2>
+        <h2 id="melhor" class="text-3xl pt-4   text-center text-3xl font-bold text-black  md:text-5xl md:text-left">Sua melhor opção para <br><span class="text-[#23A6F0]"> Empréstimos</span></h2>
         <p class="font-semibold text-sm text-center md:text-left md:text-lg mt-7">O Banco Safra é uma instituição financeira renomada e confiável, com uma sólida reputação no mercado. Oferecem uma variedade de soluções de empréstimo para atender às necessidades individuais e empresariais, combinando taxas competitivas, flexibilidade e excelência no atendimento ao cliente.</p>
       </div>
 
