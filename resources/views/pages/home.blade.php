@@ -42,8 +42,8 @@
       <div id="hero" class="block items-center justify-center w-full max-w-md md:max-w-2xl">
         <h1 class="text-4xl text-white font-extrabold md:text-7xl">Crédito Digital <br> Safra</h1>
         <p class="text-white text-base font-base py-4 w-[80%] md:text-lg">Empréstimo fácil e rápido para sua empresa.</p>
-        <a href="#section-simular"><button class="text-white p-3 px-5 font-bold w-full bg-[#23A6F0] text-sm rounded-full md:text-base	 md:max-w-[200px] hover:bg-[#00003C] transition duration-300 ease-out">Simule e Contrate</button></a>
-        <a href="#section-certificado"><button class="text-white p-3 mb-10 mt-2 px-5 font-bold w-full border border-[#ffff] md:text-base	 text-xs md:max-w-[200px] rounded-full hover:shadow-xl hover:shadow-[#FFFFFF] transition duration-700 ease-out">Saiba Mais</button></a>        
+        <a href="#section-simular"><button id="btn-simular" class="text-white p-3 px-5 font-bold w-full bg-[#23A6F0] text-sm rounded-full md:text-base md:max-w-[200px] hover:bg-[#00003C] transition duration-300 ease-out">Simule e Contrate</button></a>
+        <a href="#section-certificado"><button id="btn-mais" class="text-white p-3 mb-10 mt-2 px-5 font-bold w-full border border-[#ffff] md:text-base text-xs md:max-w-[200px] rounded-full hover:shadow-xl hover:shadow-[#FFFFFF] transition duration-700 ease-out">Saiba Mais</button></a>        
       </div>
   </div>
   <a class="border border-white" href="#section-certificado">

@@ -42,6 +42,14 @@
   #hero p{
     font-size: 16px;
   }
+  #btn-simular{
+    padding: 7px;
+    font-size: 12px;
+  }
+  #btn-mais{
+    padding: 7px;
+    font-size: 12px;
+  }
   .line::after{
     opacity: 0.3;
     content: '';
