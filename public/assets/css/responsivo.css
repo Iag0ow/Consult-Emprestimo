@@ -242,7 +242,7 @@
   .iconScrol {
     content: "";
     position: absolute;
-    top: calc(90%);
+    top: calc(87%);
     left: calc(46%);
   }
 }
