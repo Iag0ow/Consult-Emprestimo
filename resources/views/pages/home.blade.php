@@ -449,7 +449,6 @@
 <script>
       $(document).ready(function() {
         $('.ajaxForm2').on('submit',function(e) {
-          console.log('clicado:', e);
         e.preventDefault();
         let form = $(this);
         let data = form.serializeArray();
