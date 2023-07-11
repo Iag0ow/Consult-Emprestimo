@@ -83,7 +83,7 @@ class SiteService
         $cliente = new Cliente();
 
         try {
-            $cliente->cli_noaase = $request->get('nome');
+            $cliente->cli_nome = $request->get('nome');
             $cliente->cli_telefone = $telefone;
             $cliente->cli_cnpj = $cnpj;
             $cliente->cli_faturamento = $faturamento;
@@ -98,7 +98,7 @@ class SiteService
 
             $response = Http::get($url . $cnpj);
             $data = $response->json();
-
+            
             $empresa = new Empresa();
 
             $empresa->cliente_id = $clienteId;
@@ -110,13 +110,13 @@ class SiteService
             $empresa->emp_situacao = $data['situacao'];
             $empresa->emp_abertura = $data['abertura'];
             $empresa->emp_natureza_juridica = $data['natureza_juridica'];
-            $empresa->emp_atividade_principal = $data['atividade_principal']['text'];
-            $empresa->emp_atividade_principal_code = $data['atividade_principal']['code'];
+            $empresa->emp_atividade_principal = $data['atividade_principal'][0]['text'];
+            $empresa->emp_atividade_principal_code = $data['atividade_principal'][0]['code'];
             $empresa->save();
             $empresaId = $empresa->empresa_id;
 
         } catch (\Throwable $th) {
-            return response()->json(['success' => 'Operação realizada com sucesso'], 200);
+            return response()->json(['erro' => 'Verifique seus dados e tente novamente'], 400);
         }
 
         try {
@@ -125,11 +125,11 @@ class SiteService
                 $socio = new Socio();
                 $socio->soc_nome = $value['nome'];
                 $socio->soc_posicao = $value['qual'];
-                $socio->soc_empresa_id = $empresaId;
+                $socio->empresa_id = $empresaId;
                 $socio->save();
             }
         } catch (\Throwable $th) {
-            //throw $th;
+            return response()->json(['success' => 'Operação realizada com sucesso'], 201);
         }
         
         return response()->json(['success' => 'Operação realizada com sucesso'], 200);
