@@ -41,4 +41,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    const CREATED_AT = 'cadastrado';
+    const UPDATED_AT = 'atualizado';
+    const DELETED_AT = 'excluido';
 }

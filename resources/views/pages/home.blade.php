@@ -42,7 +42,7 @@
       <div id="hero" class="block items-center justify-center w-full max-w-md md:max-w-2xl">
         <h1 class="text-4xl text-white font-extrabold md:text-7xl">Crédito Digital <br> Safra</h1>
         <p class="text-white text-base font-base py-4 w-[80%] md:text-lg">Empréstimo fácil e rápido para sua empresa.</p>
-        <a href="#section-simular"><button id="btn-simular" class="text-white p-3 px-5 font-bold w-full bg-[#23A6F0] text-sm rounded-full md:text-base md:max-w-[200px] hover:bg-[#00003C] transition duration-300 ease-out">Simule e Contrate</button></a>
+        <a id="simular-link" href="#section-simular"><button id="btn-simular" class="text-white p-3 px-5 font-bold w-full bg-[#23A6F0] text-sm rounded-full md:text-base md:max-w-[200px] hover:bg-[#00003C] transition duration-300 ease-out">Simule e Contrate</button></a>
         <a href="#section-certificado"><button id="btn-mais" class="text-white p-3 mb-10 mt-2 px-5 font-bold w-full border border-[#ffff] md:text-base text-xs md:max-w-[200px] rounded-full hover:shadow-xl hover:shadow-[#FFFFFF] transition duration-700 ease-out">Saiba Mais</button></a>        
       </div>
   </div>
@@ -184,7 +184,7 @@
           </div>
 
           <div class="flex">
-            <input class="mr-2" type="checkbox" name="whatsapp" id="whatsapp" value="WhatsApp">
+            <input class="mr-2" type="checkbox" name="whatsapp" id="whatsapp" value="S">
             <label class="text-[#B6B6B6] mr-2" for="whatsapp">WhatsApp</label>
             <img src="./assets/images/whatsapp.svg" alt="">
           </div>
@@ -404,6 +404,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
 <script>
+  
     $(document).ready(function() {
         $('.ajaxForm').on('submit', function(e) {
         e.preventDefault();
@@ -446,8 +447,11 @@
     });
 
     $(document).ready(function() {
-        $('.ajaxForm2').on('submit', function(e) {
+        $('.ajaxForm2').on('submit', async function(e) {
         e.preventDefault();
+        // const response = await fetch('http://receitaws.com.br/v1/cnpj/59291534000167');
+        // const datae = await response.json();
+        // console.log(datae);
         let form = $(this);
         let data = form.serializeArray();
         $('#submit-simule-mobile').prop('disabled', true);           
@@ -565,5 +569,19 @@
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("sidenav-trigger").style.display = "block";
   }
+</script>
+<script>
+    function updateSimularLink() {
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var link = document.getElementById('simular-link');
+
+    if (screenWidth < 900) { 
+      link.href = '#formulario-simulacao-mobile';
+    } else {
+      link.href = '#section-simular';
+    }
+  }
+  window.addEventListener('load', updateSimularLink);
+  window.addEventListener('resize', updateSimularLink);
 </script>
 @endsection

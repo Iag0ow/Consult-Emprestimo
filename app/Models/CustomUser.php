@@ -26,5 +26,6 @@ class CustomUser extends AuthenticatableUser implements Authenticatable
 
     const CREATED_AT = 'cadastrado';
     const UPDATED_AT = 'atualizado';
+    const DELETED_AT = 'excluido';
     
 }

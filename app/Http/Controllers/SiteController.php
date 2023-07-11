@@ -6,6 +6,7 @@ use App\Services\SiteService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Http;
 
 
 class SiteController extends Controller
@@ -51,9 +52,8 @@ class SiteController extends Controller
     }
     public function simulacao(Request $request)
     {
-        dd($request->all());
-        return view('pages.home', [
-            'titulo' => 'Home',
-        ]);
+        $ss = new SiteService();
+        $response = $ss->simular($request);
+        return $response;
     }
 }
