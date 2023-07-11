@@ -202,17 +202,17 @@
           <h2 class="text-center text-md font-extrabold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>
           <p class="text-center text-md font-extrabold text-[#23A6F0] mb-5">Simule já</p>
   
-          <form id="sadsadasdasdsadsa" class="ajaxForm2" method="POST">
+          <form id="form-mob" class="ajaxForm2" method="POST">
             @csrf
             <div class="flex flex-wrap">
-              <input required type="text" name="nome2" placeholder="Nome" autocomplete="off" class="text-xs mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
-              <input required type="text" name="cnpj2" placeholder="CNPJ" autocomplete="off" class="cnpj text-xs mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
-              <input required type="text" name="faturamento2" placeholder="Faturamento" autocomplete="off" class="faturamento text-xs  mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input required type="text" name="nome" placeholder="Nome" autocomplete="off" class="text-xs mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input required type="text" name="cnpj" placeholder="CNPJ" autocomplete="off" class="cnpj text-xs mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input required type="text" name="faturamento" placeholder="Faturamento" autocomplete="off" class="faturamento text-xs  mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
             </div>
   
             <div class="grid grid-cols-6 gap-3">
-              <input required type="tel" name="ddd2" placeholder="DDD" class="ddd2 text-xs col-span-2 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
-              <input required type="tel" name="numero2" placeholder="Telefone" class="js-phoneMask2 text-xs col-span-4 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input required type="tel" name="ddd" placeholder="DDD" class="ddd2 text-xs col-span-2 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
+              <input required type="tel" name="numero" placeholder="Telefone" class="js-phoneMask2 text-xs col-span-4 mb-2 w-full px-3 py-3 border border-[#D9D9D9] rounded-lg focus:drop-shadow-lg focus:border-[#23A6F0] focus:border-1 focus:outline-none transition duration-500">
             </div>
   
             <div class="flex mt-2">
@@ -223,7 +223,7 @@
   
           </form>
         </div>
-        <input id="submit-simule-mobile" type="button" class="text-xs text-white font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="SIMULE" form="sadsadasdasdsadsa">
+        <input id="submit-simule-mobile" type="submit" class="text-xs text-white font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="SIMULE" form="form-mob">
       </div>
     </div>
  </section>
@@ -445,8 +445,9 @@
             });
         });
     });
-
-    $(document).ready(function() {
+</script>
+<script>
+      $(document).ready(function() {
         $('.ajaxForm2').on('submit',function(e) {
           console.log('clicado:', e);
         e.preventDefault();
