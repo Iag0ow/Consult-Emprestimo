@@ -43,7 +43,7 @@
     font-size: 16px;
   }
   #btn-simular{
-    padding: 7px;
+    padding: 10px;
     font-size: 12px;
   }
   #btn-mais{
@@ -340,6 +340,12 @@
       border-radius: 5px;
       margin-top: 10px
     }
+    #btn-simular{
+      padding: 10px;
+    }  
+    #btn-mais{
+      padding: 10px;
+    }  
 }
 
 
