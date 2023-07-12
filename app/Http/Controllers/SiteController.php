@@ -47,8 +47,13 @@ class SiteController extends Controller
         return Redirect::to('/login');
     }
     public function simular()
-    {
-        return view('pages.simular');
+    {  
+        $autorizado = session()->get('autorizado');
+        if(is_null($autorizado) || !$autorizado){
+            return Redirect::to('/');
+        }
+        session()->forget('autorizado');
+        return view('pages.simulacao');
     }
     public function simulacao(Request $request)
     {

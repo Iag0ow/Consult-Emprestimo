@@ -74,6 +74,7 @@ class SiteService
 
     function simular($request)
     {
+        session()->put('autorizado', true);
         $cnpj = str_replace(['.', '-','/'], '', $request->get('cnpj'));
         $faturamento = str_replace(['.', ',','R$',' '], '', $request->get('faturamento'));
         $telefone =  $request->get('ddd') . $request->get('numero');
