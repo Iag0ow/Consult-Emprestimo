@@ -12,15 +12,15 @@ class SiteService
     public function getClientes()
     {
         $clientes = Cliente::whereNull('excluido')
-        ->paginate(2)
+        ->paginate(10)
         ->onEachSide(1)
         ->toArray();
-
-        foreach ($clientes['data'] as $key => $cliente) {
-            $clientes['data'][$key]['cli_formatado'] = $this->formatarTel(strval($cliente['cli_telefone']));
-            $clientes['data'][$key]['cli_cnpj'] = $this->formatarCNPJ(strval($cliente['cli_cnpj']));
-        }
-        
+        if(!empty($clientes)){
+            foreach ($clientes['data'] as $key => $cliente) {
+                $clientes['data'][$key]['cli_formatado'] = $this->formatarTel(strval($cliente['cli_telefone']));
+                $clientes['data'][$key]['cli_cnpj'] = $this->formatarCNPJ(strval($cliente['cli_cnpj']));
+            }
+        }  
         return $clientes;
     }
 
@@ -31,6 +31,10 @@ class SiteService
         $indiceMascara = 0;
         
         for ($i = 0; $i < strlen($mascara); $i++) {
+            if ($indiceMascara >= strlen($numero)) {
+                break;
+            }
+    
             if ($mascara[$i] === '#') {
                 $numeroFormatado .= $numero[$indiceMascara];
                 $indiceMascara++;
@@ -41,6 +45,7 @@ class SiteService
         
         return $numeroFormatado;
     }
+    
     function removerFormatacaoTel($numeroFormatado)
     {
         $numero = '';
@@ -61,6 +66,10 @@ class SiteService
         $indiceMascara = 0;
         
         for ($i = 0; $i < strlen($mascara); $i++) {
+            if ($indiceMascara >= strlen($cnpj)) {
+                break; // Verificar se já chegou ao fim da string $cnpj
+            }
+    
             if ($mascara[$i] === '#') {
                 $cnpjFormatado .= $cnpj[$indiceMascara];
                 $indiceMascara++;
@@ -71,6 +80,7 @@ class SiteService
         
         return $cnpjFormatado;
     }
+    
 
     function simular($request)
     {

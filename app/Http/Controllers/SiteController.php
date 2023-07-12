@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\SeachService;
 use App\Services\SiteService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -60,5 +61,13 @@ class SiteController extends Controller
         $ss = new SiteService();
         $response = $ss->simular($request);
         return $response;
+    }
+
+    public function search(Request $request)
+    {
+        $ss = new SeachService();
+        $pesquisa = $request->get('pesquisa');
+        $data['clientes']= $ss->searchClientes($pesquisa);
+        return view('pages.clientes', $data);
     }
 }
