@@ -196,7 +196,7 @@
 </section>
 
 {{-- Mobile --}}
-<section id="formulario-simulacao-mobile" class="flex w-screen h-screen bg-cover bg-center md:hidden bg-[#DFEEF6] px-[40px] md:px-64" style="background-image: url('./assets/images/background3.png');">
+<section id="formulario-simulacao-mobile" class="flex w-screen h-screen bg-cover bg-center md:hidden bg-[#DFEEF6] px-[20px] md:px-64" style="background-image: url('./assets/images/background3.png');">
     <div id="section-simular" class="my-auto">
         <div class="bg-white px-6 py-4 pb-14 rounded-xl drop-shadow-md">
           <h2 class="text-center text-md font-extrabold">Empréstimo <span class="font-normal">de até</span> R$ 50.000</h2>

@@ -15,7 +15,7 @@ div.my-auto{
 #submit-simule-mobile{
   position: absolute;
   top: calc(100% - 21px);
-  left: calc(26%);
+  left: calc(30%);
 }
 .button-certificado{
   content: "";
