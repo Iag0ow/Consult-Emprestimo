@@ -153,16 +153,23 @@
     top: calc(100% - 30px);
     left: calc(100% - 400px);
   }
-  
+
 }
 
-@media screen and (max-width: 1200px) {
-  
+
+@media screen and (min-width: 1600px) {
+
 }
 @media screen and (max-width: 320px) {
   /* here */
 }
 @media screen and (max-width: 991px) {
+    #submit-contrate{
+      content: "";
+      position: absolute;
+      top: calc(100% - 22px);
+      left: calc(27%);
+    }
     .sidenav {
       height: 100%;
       width: 0;

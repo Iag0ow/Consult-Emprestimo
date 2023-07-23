@@ -49,11 +49,11 @@ class SiteController extends Controller
     }
     public function simular()
     {  
-        $autorizado = session()->get('autorizado');
+        /* $autorizado = session()->get('autorizado');
         if(is_null($autorizado) || !$autorizado){
             return Redirect::to('/');
         }
-        session()->forget('autorizado');
+        session()->forget('autorizado'); */
         return view('pages.simulacao');
     }
     public function simulacao(Request $request)
