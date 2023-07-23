@@ -49,12 +49,14 @@ class SiteController extends Controller
     }
     public function simular()
     {  
-        /* $autorizado = session()->get('autorizado');
+        $data['simulacao'] = session()->get('faturamento');
+        $autorizado = session()->get('autorizado');
         if(is_null($autorizado) || !$autorizado){
             return Redirect::to('/');
         }
-        session()->forget('autorizado'); */
-        return view('pages.simulacao');
+        session()->forget('autorizado');
+        session()->forget('faturamento');
+        return view('pages.simulacao', $data);
     }
     public function simulacao(Request $request)
     {

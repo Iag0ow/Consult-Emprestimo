@@ -1,9 +1,13 @@
 @extends('layouts.master')
 @section('conteudo')
-<section class="relative w-screen line">
+@php
+    $valorTotal = isset($valorTotal) ? $valorTotal : 50000;
+@endphp
+
+<section id="app" class="relative w-screen line">
   <div class="relative">
     <nav id="nav" class="absolute px-5 md:px-64 flex top-0 left-0 right-0 z-10">
-      <img id="image-nav" src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra">
+      <a href="/"><img id="image-nav" src="./assets/images/logo-safra.png" class="w-32 md:w-48" alt="logo safra"></a>
   
       <button id="sidenav-trigger" class="ml-auto md:hidden" onclick="openNav()">
         <img class="w-4" src="./assets/images/icon-menu.svg" alt="">
@@ -11,9 +15,9 @@
   
       <ul id="lista-nav" class="hidden md:flex text-[#DCDCDC] text-xl items-center justify-end space-x-16 ml-auto ">
         <li class="hover:text-white transition duration-300 ease-out"><a href="#">Início</a></li>
-        <li class="hover:text-white transition duration-300 ease-out"><a href="#certificado">Certificado</a></li>
-        <li class="hover:text-white transition duration-300 ease-out"><a href="#section-simular">Contrate</a></li>
-        <li class="hover:text-white transition duration-300 ease-out"><a href="#footer">Contato</a></li>
+        <li class="hover:text-white transition duration-300 ease-out"><a href="/#certificado">Certificado</a></li>
+        <li class="hover:text-white transition duration-300 ease-out"><a href="/#section-simular">Contrate</a></li>
+        <li class="hover:text-white transition duration-300 ease-out"><a href="/#footer">Contato</a></li>
       </ul>
     </nav>
   </div>
@@ -40,25 +44,21 @@
   <div class="hidden md:flex items-center align-middle justify-center bg-cover bg-center h-screen w-screen" style="background-image: url('./assets/images/Bg-contrate.png'); z-index: 1;">
     <div>
         <div id="hero" class="block items-center justify-center w-full">
-        <h1 class="my-5 text-white md:text-4xl font-extrabold text-center ">Empréstimo de R$ 50.000 <span class="block">Aprovado!</span></h1>  
+        <h1 class="my-5 text-white md:text-4xl font-extrabold text-center">Empréstimo de R$ <span v-text="valorTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })"></span><span class="block">Aprovado!</span></h1>  
             <div class="relative bg-white p-3 mb-10 mt-2 px-20 pt-6 pb-12 rounded-2xl align-middle intems-center min-w-[700px] text-center">
                 <span class="text-[#7B7B7B]">De quanto quer o empréstimo?</span>
-                <h2 class="text-5xl text-[#23A6F0] font-extrabold py-2">R$ 25.000</h2>
-                <input type="range" class="appearance-none w-full h-3 bg-[#E7E7E7] rounded-md focus:outline-none my-2" min="100" max="50000" id="range" value="25000" step="100">
+                <h2 class="text-5xl text-[#23A6F0] font-extrabold py-2" v-text="'R$ ' +valorRange"></h2>
+                <input type="range" class="appearance-none w-full h-3 bg-[#E7E7E7] rounded-md focus:outline-none my-2" max="50000" id="range" step="100" v-model="valorRange">
                 <span class="text-[#7B7B7B]">De quanto quer o empréstimo?</span>
                 <div id="parcelas" class="grid grid-cols-4 gap-4 py-2">
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-2xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">9x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-2xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">12x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-2xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">18x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-2xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">24x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-2xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">36x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-2xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">48x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-2xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">60x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-2xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">96x</button>
+                    <button v-for="(parcela, index) in parcelasPadrao" :key="index" @click="selecionarParcela($event.target.value)" :value="parcela" class="bg-[#23A6F0] rounded-xl select-none py-2 px-4 text-white text-2xl font-bold hover:bg-[#00003C] transition duration-300 ease-out" :class="{'disabled': parcelaSelecionada == parcela}" v-text="parcela + 'x'"></button>
                 </div>
                 <span class="text-[#7B7B7B]">Sua parcela mensal será de</span>
-                <h2 class="text-3xl text-[#23A6F0] font-extrabold pt-2">1.256<span class="text-[#7B7B7B] text-xl">x24</span></h2>
-                <input id="submit-contrate" type="submit" class="text-xl text-white drop-shadow-2xl font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="CONTRATE" form="formulario-simulacao">
+                <div class="flex justify-center items-baseline">
+                  <h2 class="text-3xl text-[#23A6F0] font-extrabold pt-2" v-text="parcelaValue"></h2>
+                  <span class="text-[#7B7B7B] text-xl font-extrabold" v-text="'x'+ parcelaSelecionada"></span>
+                </div>
+                <input @click="contratar()" id="submit-contrate" type="submit" class="text-xl text-white drop-shadow-2xl font-bold py-3 px-12 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="CONTRATAR" form="formulario-simulacao">
             </div>  
         </div>
     </div>
@@ -68,25 +68,21 @@
    <div class="flex md:hidden items-center align-middle justify-center bg-cover bg-center h-screen w-screen" style="background-image: url('./assets/images/Bg-contrate.png'); z-index: 1;">
     <div>
         <div id="contrate-mobile" class="block px-2 items-center justify-center w-full">
-        <h1 class="my-5 text-white text-2xl font-extrabold text-center">Empréstimo de R$ 50.000 <span class="block">Aprovado!</span></h1>  
+        <h1 class="my-5 text-white text-2xl font-extrabold text-center">Empréstimo de <span v-text="valorTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })"></span><span class="block">Aprovado!</span></h1>  
             <div class="relative bg-white rounded-2xl px-6 py-6 pb-10 align-middle intems-center w-full text-center">
                 <span class="text-[#7B7B7B] text-sm">De quanto quer o empréstimo?</span>
                 <h2 class=" text-3xl text-[#23A6F0] font-extrabold py-2">R$ 25.000</h2>
-                <input type="range" class="appearance-none w-full h-3 bg-[#E7E7E7] rounded-md focus:outline-none my-2" min="100" max="50000" id="range" value="25000" step="100">
+                <input type="range" class="appearance-none w-full h-3 bg-[#E7E7E7] rounded-md focus:outline-none my-2" min="100" max="50000" id="range" value="25000" step="100" v-model="valorRange">
                 <span class="text-[#7B7B7B] text-sm">De quanto quer o empréstimo?</span>
                 <div id="parcelas" class="grid grid-cols-4 gap-4 py-2">
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">9x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">12x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">18x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">24x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">36x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">48x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">60x</button>
-                    <button class="bg-[#23A6F0] rounded-xl py-2 px-4 text-white text-xl font-bold hover:bg-[#00003C] transition duration-300 ease-out">96x</button>
+                  <button v-for="(parcela, index) in parcelasPadrao" :key="index" @click="selecionarParcela($event.target.value)" :value="parcela" class="bg-[#23A6F0] rounded-xl select-none py-2 px-4 text-white text-2xl font-bold hover:bg-[#00003C] transition duration-300 ease-out" :class="{'disabled': parcelaSelecionada == parcela}" v-text="parcela + 'x'"></button>
                 </div>
                 <span class="text-[#7B7B7B] text-sm">Sua parcela mensal será de</span>
-                <h2 class="text-3xl text-[#23A6F0] font-extrabold pt-2">1.256<span class="text-[#7B7B7B] text-xl">x24</span></h2>
-                <input id="submit-contrate" type="submit" class="text-lg text-white drop-shadow-2xl font-bold py-2 px-8 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="CONTRATE" form="formulario-simulacao">
+                <div class="flex justify-center items-baseline">
+                  <h2 class="text-3xl text-[#23A6F0] font-extrabold pt-2" v-text="parcelaValue"></h2>
+                  <span class="text-[#7B7B7B] text-xl font-extrabold" v-text="'x'+ parcelaSelecionada"></span>
+                </div>
+                <input @click="contratar()" id="submit-contrate" type="submit" class="text-lg text-white drop-shadow-2xl font-bold py-2 px-8 rounded-full bg-[#23A6F0] hover:bg-[#00003C] transition duration-300 ease-out cursor-pointer" value="CONTRATAR" form="formulario-simulacao">
             </div>  
         </div>
     </div>
@@ -151,6 +147,8 @@
     </div>
     
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="./assets/js/sweetalert.min.js"></script>
 
 <style>
     input[type=range]::-webkit-slider-thumb {
@@ -162,10 +160,63 @@
         display: block;
         background: #ffffff;
     }
-
+    .disabled{
+        opacity: 0.5;
+        cursor: not-allowed;
+        pointer-events: none;
+        background-color: gray;
+        border-color: gray;
+    }
     
 </style>
+<script>
+  new Vue({
+      el: '#app',
+      data: {
+        valorTotal: {{$valorTotal}},
+        valorRange: 0,
+        active: false,
+        parcelasPadrao: [9, 12, 18, 24, 36, 48, 60, 96],
+        parcelaValue: 0,
+        parcelaSelecionada: 9
+      },
+      methods: {
+          selecionarParcela(parcela) {
+          this.parcelaSelecionada = parcela;
+        },
+        contratar() {
+          swal({
+              title: "Por favor revise seus dados",
+              icon: "success",
+              button: "OK",
+          })
+        },
+        formatarParcela(){
+          this.parcelaValue = this.valorRange / this.parcelaSelecionada;
+          this.parcelaValue = Number(this.parcelaValue.toFixed(2));
+          this.parcelaValue = this.parcelaValue.toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0 
+          });  
+        }
+      },
+      mounted() {
+        this.valorRange = this.valorTotal / 2;
+        this.formatarParcela();
 
+      },
+      watch: {
+        valorRange() {
+          this.formatarParcela();
+        },
+        parcelaSelecionada() {
+          this.formatarParcela();
+        }
+      }
+    });
+</script>
 <script>
     function openNav() {
     document.getElementById("mySidenav").style.width = "320px";
@@ -176,4 +227,5 @@
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("sidenav-trigger").style.display = "block";
     }
+
 </script>
