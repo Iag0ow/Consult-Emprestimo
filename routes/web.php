@@ -21,4 +21,5 @@ Route::get('/logout', [SiteController::class, 'logout'])->name('site.logout');
 Route::get('/clientes', [SiteController::class, 'clientes'])->middleware('auth');
 Route::get('/simulacao', [SiteController::class, 'simular']);
 Route::post('/simulacao', [SiteController::class, 'simulacao'])->name('site.simulacao');
+Route::post('/parcelas', [SiteController::class, 'parcelas'])->name('site.parcelas');
 Route::get('/search', [SiteController::class, 'search'])->name('site.search')->middleware('auth');

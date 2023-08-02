@@ -21,7 +21,8 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="800" />
-  
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     

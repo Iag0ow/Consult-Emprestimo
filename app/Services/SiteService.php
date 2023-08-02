@@ -85,9 +85,15 @@ class SiteService
     function simular($request)
     {
         session()->put('autorizado', true);
-        session()->put('faturamento', $request->get('faturamento'));
+        // $faturamento = str_replace(['.', ',','R$',' '], '', $request->get('faturamento'));
+        $faturamento = str_replace("R$", "", $request->get('faturamento'));
+        $faturamento = str_replace(".", "", $faturamento);
+        $faturamento = str_replace(",", ".", $faturamento);
+        $faturamento = (int)$faturamento;
+        session()->put('faturamento', $faturamento);
+        session()->put('faturamentoFormatado', $request->get('faturamento'));
         $cnpj = str_replace(['.', '-','/'], '', $request->get('cnpj'));
-        $faturamento = str_replace(['.', ',','R$',' '], '', $request->get('faturamento'));
+        $faturamento = $faturamento * 0.70;
         $telefone =  $request->get('ddd') . $request->get('numero');
         $telefone = $this->removerFormatacaoTel($telefone);
         
@@ -102,6 +108,7 @@ class SiteService
             $cliente->cli_whatsapp = $request->get('cli_whatsapp') ? $request->get('cli_whatsapp') : 'N';
             $cliente->save();
             $clienteId = $cliente->cliente_id;
+            session()->put('clienteId', $clienteId);
         } catch (\Throwable $th) {
             return response()->json(['erro' => 'Verifique seus dados e tente novamente'], 400);
         }
@@ -145,6 +152,19 @@ class SiteService
             return response()->json(['success' => 'Operação realizada com sucesso'], 201);
         }
         
+        return response()->json(['success' => 'Operação realizada com sucesso'], 200);
+    }
+    public function setParcelas($request){
+        $idDoCliente = session()->get('clienteId');
+        $cliente = Cliente::find($idDoCliente);
+        if ($cliente) {
+            $cliente->cli_valor_emprestimo = $request['valorSolicitado'];
+            $cliente->cli_valor_parcela =  str_replace(['.', ',','R$',' '], '', $request['valorParcela']);
+            $cliente->cli_parcelas = $request['parcela'];
+        
+            $cliente->save();
+        } 
+        session()->forget('clienteId');
         return response()->json(['success' => 'Operação realizada com sucesso'], 200);
     }
 }

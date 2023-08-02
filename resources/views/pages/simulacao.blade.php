@@ -44,11 +44,11 @@
   <div class="hidden md:flex items-center align-middle justify-center bg-cover bg-center h-screen w-screen" style="background-image: url('./assets/images/Bg-contrate.png'); z-index: 1;">
     <div>
         <div id="hero" class="block items-center justify-center w-full">
-        <h1 class="my-5 text-white md:text-4xl font-extrabold text-center">Empréstimo de R$ <span v-text="valorTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })"></span><span class="block">Aprovado!</span></h1>  
+        <h1 class="my-5 text-white md:text-4xl font-extrabold text-center">Empréstimo de R$ <span v-text="exibirTotal"></span><span class="block">Aprovado!</span></h1>  
             <div class="relative bg-white p-3 mb-10 mt-2 px-20 pt-6 pb-12 rounded-2xl align-middle intems-center min-w-[700px] text-center">
                 <span class="text-[#7B7B7B]">De quanto quer o empréstimo?</span>
                 <h2 class="text-5xl text-[#23A6F0] font-extrabold py-2" v-text="'R$ ' +valorRange"></h2>
-                <input type="range" class="appearance-none w-full h-3 bg-[#E7E7E7] rounded-md focus:outline-none my-2" max="50000" id="range" step="100" v-model="valorRange">
+                <input type="range" class="appearance-none w-full h-3 bg-[#E7E7E7] rounded-md focus:outline-none my-2" :max="valorTotal" id="range" step="100" v-model="valorRange">
                 <span class="text-[#7B7B7B]">De quanto quer o empréstimo?</span>
                 <div id="parcelas" class="grid grid-cols-4 gap-4 py-2">
                     <button v-for="(parcela, index) in parcelasPadrao" :key="index" @click="selecionarParcela($event.target.value)" :value="parcela" class="bg-[#23A6F0] rounded-xl select-none py-2 px-4 text-white text-2xl font-bold hover:bg-[#00003C] transition duration-300 ease-out" :class="{'disabled': parcelaSelecionada == parcela}" v-text="parcela + 'x'"></button>
@@ -148,6 +148,7 @@
     
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./assets/js/sweetalert.min.js"></script>
 
 <style>
@@ -173,7 +174,8 @@
   new Vue({
       el: '#app',
       data: {
-        valorTotal: {{$valorTotal}},
+        valorTotal: 0,
+        exibirTotal: 0,
         valorRange: 0,
         active: false,
         parcelasPadrao: [9, 12, 18, 24, 36, 48, 60, 96],
@@ -185,16 +187,69 @@
           this.parcelaSelecionada = parcela;
         },
         contratar() {
-          swal({
-              title: "Por favor revise seus dados",
-              icon: "success",
-              button: "OK",
-          })
+            swal({
+              title: "Você já possui certificado digital?",
+              icon: "info",
+              buttons: {
+                  cancel: {
+                      text: "Não",
+                      value: false,
+                      visible: true,
+                      className: "swal-button--cancel",
+                      closeModal: true,
+                  },
+                  confirm: {
+                      text: "Sim",
+                      value: true,
+                      visible: true,
+                      className: "swal-button--confirm",
+                      closeModal: true,
+                  },
+              },
+          }).then((value) => {
+            const data = {
+              _token: $('meta[name="csrf-token"]').attr('content'),
+              parcela: this.parcelaSelecionada,
+              valorParcela: this.parcelaValue,
+              valorSolicitado: this.valorRange
+            }
+              if (value) {
+                  swal("Contrato solicitado!", "Obrigado, entraremos em contato em breve.", "success");
+                  
+                  $.ajax({
+                      type: 'POST',
+                      url: '/parcelas',
+                      data: data,
+                      success: function(response) {
+                          // window.location.href = '/';
+                      }
+                  });
+              } else {
+                  swal("Não possui certificado?", "Entraremos em contato para disponibilizar seu certificado digital.", "success");
+                  $.ajax({
+                      type: 'POST',
+                      url: '/parcelas',
+                      data: data,
+                      success: function(response) {
+                          // window.location.href = '/';
+                      }
+                  });
+              }
+          });
         },
         formatarParcela(){
           this.parcelaValue = this.valorRange / this.parcelaSelecionada;
-          this.parcelaValue = Number(this.parcelaValue.toFixed(2));
+          this.parcelaValue = this.parcelaValue.toFixed(2);
           this.parcelaValue = this.parcelaValue.toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0 
+          });  
+        },
+        formatarValor(valor) {
+          valor = Number(valor.toFixed(2));
+          this.exibirTotal = valor.toLocaleString('pt-BR', {
             style: 'currency',
             currency: 'BRL',
             minimumFractionDigits: 0,
@@ -203,9 +258,13 @@
         }
       },
       mounted() {
-        this.valorRange = this.valorTotal / 2;
+        let valor = @json($simulacao);
+        // let total = valor.replace(/[R$\s.]/g, '').replace(',', '.');
+        valor = Math.floor(valor * 0.70); //caso o calculo mude, basta alterar esse valor
+        this.valorTotal = valor;
+        this.formatarValor(valor);
+        this.valorRange = valor / 2;
         this.formatarParcela();
-
       },
       watch: {
         valorRange() {
@@ -229,3 +288,41 @@
     }
 
 </script>
+<style>
+  .swal-text {
+    text-align: center;
+  }
+  .swal-footer {
+      display: flex;
+      justify-content: center;
+  }
+
+  .swal-button--confirm {
+      background-color: #28a745;
+      transition: 1s;
+  }
+  .swal-button--confirm:hover {
+      background-color: #1d7030;
+      transition: 1s;
+  }
+  .swal-button:not([disabled]):hover {
+      background-color: #1d7030;
+      transition: 1s;
+  }
+
+  .swal-button--cancel {
+      background-color: #dc3545;
+      color: white;
+      transition: 1s;
+  }
+  .swal-button--cancel:not([disabled]):hover {
+      background-color: #9e2632;
+      color: white;
+      transition: 1s;
+  }
+  .swal-button--cancel:hover {
+      background-color: #9e2632;
+      color: white;
+      transition: 1s;
+  }
+</style>

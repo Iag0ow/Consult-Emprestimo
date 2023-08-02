@@ -50,12 +50,14 @@ class SiteController extends Controller
     public function simular()
     {  
         $data['simulacao'] = session()->get('faturamento');
+        $data['simulacaoFormatado'] = session()->get('faturamentoFormatado');
         $autorizado = session()->get('autorizado');
         if(is_null($autorizado) || !$autorizado){
             return Redirect::to('/');
         }
         session()->forget('autorizado');
         session()->forget('faturamento');
+        session()->forget('faturamentoFormatado');
         return view('pages.simulacao', $data);
     }
     public function simulacao(Request $request)
@@ -71,5 +73,10 @@ class SiteController extends Controller
         $pesquisa = $request->get('pesquisa');
         $data['clientes']= $ss->searchClientes($pesquisa);
         return view('pages.clientes', $data);
+    }
+    public function parcelas(Request $request){
+        $ss = new SiteService();
+        $response = $ss->setParcelas($request->all());
+        return $response;
     }
 }
